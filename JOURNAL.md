@@ -1,4 +1,4 @@
-## Time so far: 3+1 hours
+## Time so far: 3 + 1 + 2.5 hours  =  6.5 hours
 
 # Saturday 17 May 2025 - 19:00 - 3 hours
 
@@ -30,3 +30,9 @@ I was looking into how I would control the brightness. I was initially thinking 
  through on the other side. Therefore I can generate a PWM signal for the brightness, and it can go into the optocoupler and from the optocoupler into the dimming pins of the LED driver. I will need to look at the datasheet of the optocoupler I choose, to check the voltage and current needed so that I can choose the correct resistor value, as too much current will kill the LED inside.
 
 I also thought a bit more about how I'm going to move the lens. I think I will house the lens in a tube inside the outer tube, and then move that tube in and out of the outer tube. I think this could be digitally controlled by using potentially a servo and a rack and pinion (image below) to convert the rotary movement of the servo into a linear movement of the tube. It would be good if the servo includes an encoder, so I can find what rotation the servo is at. Using that data I could then include code to compensate for how the brightness of the beam changes when the lens is moved, because as the lens is moved closer to the focal point, the beam gets brighter, which may not be wanted in some situations.
+
+# Monday 19 May 16:00-17:30  18:00-18:30  19:00-19:30 - 2.5 hours
+
+:( Edge decided my github tab is unimportant, so got rid of what i had typed here initially. I've been attempting to use kicad to start making, and it's not easy but i'm figuring it out. Oh also I realised that my school's solidworks licence runs out in like 4 days so I'm going to have to learn a completely different cad software :heavysob:. So I was at first trying to put an esp32-s2 on my pcb, but then things quickly got confusing because I realised I'd have to do power supply circuitry and clock timing and waaaaaaaaaaaaa so instead I thought I'd look at the hackpad tutorial, and i saw that it used the xiao-rp2040-dip, so I'm going to use it. It has all the pins i need, and it seems like it should be nice and simple to use. I am thinking about how to power the microcontroller, because I will have an AC input going to the LED driver, and I will need another power supply for the microcontroller. I found [this](https://www.hlktech.net/index.php?id=134) cute little AC to 5V DC converter, the part number is HLK-10M05. It will need a fuse, capacitor and resistor as well, but it should in theory do a lot of the work for me. I don't want to have two different cables plugged into my light, one for the microcontroller and one for the LED driver, so I believe this should work. I think I can just take two psus off of the same ac line? At this point I'm just getting a hold of kicad and working out the general idea of my schematic.
+
+![image](https://github.com/user-attachments/assets/8704e644-471d-45cb-ad61-32971cc67d5b)
