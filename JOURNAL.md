@@ -1,4 +1,4 @@
-## Time so far: 3 + 1 + 2.5 hours  =  6.5 hours
+## Time so far: 3 + 1 + 2.5 + 1 hours  =  7.5 hours
 
 # Saturday 17 May 2025 - 19:00 - 3 hours
 
@@ -36,3 +36,16 @@ I also thought a bit more about how I'm going to move the lens. I think I will h
 :( Edge decided my github tab is unimportant, so got rid of what i had typed here initially. I've been attempting to use kicad to start making, and it's not easy but i'm figuring it out. Oh also I realised that my school's solidworks licence runs out in like 4 days so I'm going to have to learn a completely different cad software :heavysob:. So I was at first trying to put an esp32-s2 on my pcb, but then things quickly got confusing because I realised I'd have to do power supply circuitry and clock timing and waaaaaaaaaaaaa so instead I thought I'd look at the hackpad tutorial, and i saw that it used the xiao-rp2040-dip, so I'm going to use it. It has all the pins i need, and it seems like it should be nice and simple to use. I am thinking about how to power the microcontroller, because I will have an AC input going to the LED driver, and I will need another power supply for the microcontroller. I found [this](https://www.hlktech.net/index.php?id=134) cute little AC to 5V DC converter, the part number is HLK-10M05. It will need a fuse, capacitor and resistor as well, but it should in theory do a lot of the work for me. I don't want to have two different cables plugged into my light, one for the microcontroller and one for the LED driver, so I believe this should work. I think I can just take two psus off of the same ac line? At this point I'm just getting a hold of kicad and working out the general idea of my schematic.
 
 ![image](https://github.com/user-attachments/assets/8704e644-471d-45cb-ad61-32971cc67d5b)
+
+
+# Tuesday 20 May 17:30-18:00  19:00-19:30  21:15-21:45 - 1.5 hours
+I asked [#electronics](https://hackclub.slack.com/archives/C056AMWSFKJ/p1747758821959079) in slack about how i'd power both the led driver, and after consulting with [Aiden](https://hackclub.slack.com/team/U06CHEJ7P6U) in [this](https://hackclub.slack.com/archives/C056AMWSFKJ/p1747758821959079) thread, and drawing the below, beautiful drawing, I came to the conclusion that it is safe to 
+split the ac input to a 5v psu and the led driver. I'll use a standalone psu rather than making my own, perhaps I'll take apart some random cheap usb plug for it.
+![image](https://github.com/user-attachments/assets/c418081b-234b-4d86-b918-1f718c68181b)
+
+So, the more powerful LED ([this one](https://hackclub.slack.com/archives/C056AMWSFKJ/p1747758821959079)) is 51.7V. That's weird. But the minimum voltage is 48.8V and the maximum 56.3V, so that gives me some leeway to find a suitable driver for it. Unfortunately the minimum is a smidge higher than the voltage of the meanwell driver I had been looking at. I just found [this](https://www.mouser.co.uk/ProductDetail/MEAN-WELL/ELG-150-54B?qs=sGAEpiMZZMvV8Y9YugmIgqWA%2FF1iXuxj6wUSrTKyFL2ZK2vf%2FH1rsg%3D%3D) meanwell LED driver which looks great, it's 54V so should be within the suitable voltage range for the LED, and it's 150W to go with the 115W LED, so it won't always be running at 100%. And it's only £35 which is close to the old one! and of course it supports the same way of dimming.
+
+Ok, after [@Parker Rupe](https://hackclub.slack.com/team/U08SPJPNKDZ)'s input, I'm not going to take apart some random usb plug, instead I'm going to use [this](https://www.mouser.co.uk/ProductDetail/MEAN-WELL/IRM-10-5?qs=WkdRfq4wf1Mbq1AdfDJBoQ%3D%3D) 5V 10W meanwell power supply, model IRM-10-5 [(datasheet)](https://www.meanwellusa.com/webapp/product/search.aspx?prod=IRM-10). I believe I can just slap it on and stick 240Vac into it, then it will give me 5V that can go into the xiao. Of course, I'm going to ask if someone who knows what they're doing (not me) can check over everything i design.
+So now the PCB looks like this (it looks like less...):
+
+![image](https://github.com/user-attachments/assets/5eec0b46-98ed-4a7d-a137-6f0642e71501)
