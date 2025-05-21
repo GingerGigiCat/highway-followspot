@@ -1,4 +1,4 @@
-## Time so far: 3 + 1 + 2.5 + 1.5 hours  =  8 hours
+## Time so far: 3 + 1 + 2.5 + 1.5 + 1  =  9 hours
 
 # Saturday 17 May 2025 - 19:00 - 3 hours
 
@@ -46,6 +46,14 @@ split the ac input to a 5v psu and the led driver. I'll use a standalone psu rat
 So, the more powerful LED ([this one](https://www.mouser.co.uk/ProductDetail/Lumileds/L2C5-40801825G3200?qs=T3oQrply3y8Ak6%2FCD8N%252BaQ%3D%3D)) is 51.7V. That's weird. But the minimum voltage is 48.8V and the maximum 56.3V, so that gives me some leeway to find a suitable driver for it. Unfortunately the minimum is a smidge higher than the voltage of the meanwell driver I had been looking at. I just found [this](https://www.mouser.co.uk/ProductDetail/MEAN-WELL/ELG-150-54B?qs=sGAEpiMZZMvV8Y9YugmIgqWA%2FF1iXuxj6wUSrTKyFL2ZK2vf%2FH1rsg%3D%3D) meanwell LED driver which looks great, it's 54V so should be within the suitable voltage range for the LED, and it's 150W to go with the 115W LED, so it won't always be running at 100%. And it's only £35 which is close to the old one! and of course it supports the same way of dimming.
 
 Ok, after [@Parker Rupe](https://hackclub.slack.com/team/U08SPJPNKDZ)'s input, I'm not going to take apart some random usb plug, instead I'm going to use [this](https://www.mouser.co.uk/ProductDetail/MEAN-WELL/IRM-10-5?qs=WkdRfq4wf1Mbq1AdfDJBoQ%3D%3D) 5V 10W meanwell power supply, model IRM-10-5 [(datasheet)](https://www.meanwellusa.com/webapp/product/search.aspx?prod=IRM-10). I believe I can just slap it on and stick 240Vac into it, then it will give me 5V that can go into the xiao. Of course, I'm going to ask if someone who knows what they're doing (not me) can check over everything i design.
-So now the PCB looks like this (it looks like less...):
+So now the ~~PCB~~ *schematic* looks like this (it looks like less than before...):
 
 ![image](https://github.com/user-attachments/assets/5eec0b46-98ed-4a7d-a137-6f0642e71501)
+
+
+# Wednesday 10:15-10:45  18:30-19:00 - 1 hour
+I've been getting the schematic good (I think) and i calculated what are apparently appropriate resistors, according to internet. Behold:
+
+![image](https://github.com/user-attachments/assets/c13f182e-e134-4175-86ca-c8be39994cbd)
+
+I haven't yet added a potentiometer and the motor for lens movement yet. I really don't know how I'm going to do the lens movement. I also don't know what I'm going to do with all the heat the led produces. I'll have to have a heatsink with a fan, maybe a proper cpu type cooler. I'll probably print the actual thing out of PETG, as it might be heat resistant.
