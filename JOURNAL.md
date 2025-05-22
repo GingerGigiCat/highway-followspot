@@ -61,7 +61,7 @@ I haven't yet added a potentiometer and the motor for lens movement yet. I reall
 
 # Thursday 22 May - 3 hours
 
-I learned onshape because my school's solidworks license expires soon!
+I started learning onshape because my school's solidworks license expires soon!
 
 I started modelling the lamp, as seen below, but then i decided it would be helpful to have a model (below below picture) of the lens (below below below) I'm using. I used my calipers :) the model of the lens needs a bit more work. I decided the hexagonal tube at the front should be 12cm wide, and then i will need a bigger box at the back of the light for power bits and stuff (the meanwell led driver is 22cm long...)
 
