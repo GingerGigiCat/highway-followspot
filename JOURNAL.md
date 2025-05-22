@@ -1,4 +1,4 @@
-## Time so far: 3 + 1 + 2.5 + 1.5 + 1  =  9 hours
+## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 =  12 hours
 
 # Saturday 17 May 2025 - 19:00 - 3 hours
 
