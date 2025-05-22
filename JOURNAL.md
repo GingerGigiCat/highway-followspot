@@ -51,9 +51,24 @@ So now the ~~PCB~~ *schematic* looks like this (it looks like less than before..
 ![image](https://github.com/user-attachments/assets/5eec0b46-98ed-4a7d-a137-6f0642e71501)
 
 
-# Wednesday 10:15-10:45  18:30-19:00 - 1 hour
+# Wednesday 21 May 10:15-10:45  18:30-19:00 - 1 hour
 I've been getting the schematic good (I think) and i calculated what are apparently appropriate resistors, according to internet. Behold:
 
 ![image](https://github.com/user-attachments/assets/c13f182e-e134-4175-86ca-c8be39994cbd)
 
 I haven't yet added a potentiometer and the motor for lens movement yet. I really don't know how I'm going to do the lens movement. I also don't know what I'm going to do with all the heat the led produces. I'll have to have a heatsink with a fan, maybe a proper cpu type cooler. I'll probably print the actual thing out of PETG, as it might be heat resistant.
+
+
+# Thursday 22 May - 3 hours
+
+I learned onshape because my school's solidworks license expires soon!
+
+I started modelling the lamp, as seen below, but then i decided it would be helpful to have a model (below below picture) of the lens (below below below) I'm using. I used my calipers :) the model of the lens needs a bit more work. I decided the hexagonal tube at the front should be 12cm wide, and then i will need a bigger box at the back of the light for power bits and stuff (the meanwell led driver is 22cm long...)
+
+![image](https://github.com/user-attachments/assets/04eeb36f-90bf-45a0-815d-02f63ea4c312)
+
+![image](https://github.com/user-attachments/assets/b991e05c-7b3f-4fe5-bca7-e58b3309a519)
+
+![PXL_20250522_220821661 MP](https://github.com/user-attachments/assets/86298f42-259f-43f9-bbb5-934116c96c99)
+
+
