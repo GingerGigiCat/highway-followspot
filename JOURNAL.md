@@ -72,3 +72,8 @@ I started modelling the lamp, as seen below, but then i decided it would be help
 ![PXL_20250522_220821661 MP](https://github.com/user-attachments/assets/86298f42-259f-43f9-bbb5-934116c96c99)
 
 
+# Friday 23 May - 1 hour
+
+I finished modelling the lens thing! It was shockingly difficult to do the bit where it slopes into a triangle, especially with getting the triangles to line up with the other cylinders using constraints, it's hard to explain.
+
+![image](https://github.com/user-attachments/assets/15b59ba0-bba2-46a4-af04-b0db65e234ac)
