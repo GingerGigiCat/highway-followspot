@@ -1,4 +1,4 @@
-## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 =  12 hours
+## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 =  17 hours
 
 # Saturday 17 May 2025 - 19:00 - 3 hours
 
@@ -77,3 +77,51 @@ I started modelling the lamp, as seen below, but then i decided it would be help
 I finished modelling the lens thing! It was shockingly difficult to do the bit where it slopes into a triangle, especially with getting the triangles to line up with the other cylinders using constraints, it's hard to explain.
 
 ![image](https://github.com/user-attachments/assets/15b59ba0-bba2-46a4-af04-b0db65e234ac)
+
+
+# Saturday 24 May - 4 hours
+
+I've started modelling thge front part, the inner tube that's going to hold the lens, as is seen below.
+
+![image](https://github.com/user-attachments/assets/23df8567-bc31-4833-a3ca-88a69adc18e5)
+
+I decided to try 3d printing the bit that the lens should in theory thread into because i want sanity and to see if i need a better way of holding the lens in than hoping it threads into the plastic. I'll have to try it again once i have petg, but i don't yet so i'm just doing in pla to see if the dimension i chose is good. The circle the lens should thread into is 0.5mm smaller than the outer diameter of the threads on the lens, so hopefully that will be good and hopefully my printer's accurate enough.
+
+![image](https://github.com/user-attachments/assets/21090947-3fa4-4458-a2a4-0e643194da3b)
+
+Oooo look at it go
+![PXL_20250524_175748476 MP](https://github.com/user-attachments/assets/a4df2fab-09a5-4b9d-a1c8-8e9d72725a9b)
+
+
+![image](https://github.com/user-attachments/assets/7f3c9165-76e5-4f4f-b74b-91f3f7b951b9)
+
+
+It doesn't fit :(
+It almost goes on but not quite. I can almost stretch it on but it doesn't stretch. I'm thinking if i make the holder a many sided shape of some description (hexagon maybe?) and then i should have room for it to stretch (maybe??) while still holding it??? maybe???? but then I'm not sure how I'll hold the flexible bit holding the lens to the actual tube in a way that is rigid but also allows the lens holder to flex a bit...
+
+I just thought that I could make something to clip into the weird cut out in the lens with the slanty edges, the one that took me ages to model. Still has the problem of making sure it's flexible though
+
+Ok i think clipping into the slopey bit isn't going to be possible because it's too close to the front to have any flexibility
+
+So uhhhh I cooked up this monstrosity :pf:
+![image](https://github.com/user-attachments/assets/8589e0a8-5027-44fc-a314-21884361711c)
+
+Here's how it _should_ go together with lens
+![image](https://github.com/user-attachments/assets/90f1ab17-44e2-4018-8fbf-e5fae9cbdacc)
+
+Maybe it will be too thin?
+
+Maybe it won't be flexible enough?
+
+Maybe it will just delaminate from the layer below?
+
+Maybe it will collapse when it's being printed? Hopefully the archedness is good enough that it won't need supports...
+
+I don't know, but lets find out
+
+![PXL_20250524_223147108](https://github.com/user-attachments/assets/6bba273d-c451-4613-9132-98b5e48fc3e7)
+![PXL_20250524_223842524 MP](https://github.com/user-attachments/assets/c75189f9-0a7a-4cb4-9ec0-71825fddb536)
+
+That was such a scary print to watch but IT WORKS!!!!!!!!!!!!!!!!!!!!! I am so happy
+
+goodnight github
