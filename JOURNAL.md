@@ -1,4 +1,4 @@
-## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 =  17 hours
+## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 =  19 hours
 
 # Saturday 17 May 2025 - 19:00 - 3 hours
 
@@ -125,3 +125,20 @@ I don't know, but lets find out
 That was such a scary print to watch but IT WORKS!!!!!!!!!!!!!!!!!!!!! I am so happy
 
 goodnight github
+
+
+# Sunday 25 May - 2 hours
+
+I edited the holder a little so the clippy bits go a little further inwards, just to give a slightly tighter fit on the lens. I also made it a teeny bit less long, because otherwise i think the front of the tube would have stopped the lens from going all the way in properly.
+
+Here are the dimensions of the LED, I don't know if I'll directly hold it with PETG or if I'll make a wooden bit to hold it...
+![image](https://github.com/user-attachments/assets/ce651a46-9651-45ee-bd76-3ecea05867a8)
+
+I really don't know how i'm going to mount the LED, it will get HOT and any normal filaments will just warp. I also don't know how I'm going to mount the cooler to it, and I also don't know how the temperature sensing is going to work. Oh and i'll probably need 12v power for the fan.... yay another power supply...
+
+Over lunch I decided I'll probably use some 3mm mdf i have, and cut out a whole for the led and cooler to hold the led. If that makes any sense
+
+So I pressed the button on the mouser website to get a free cad model of the led and it just worked! They did it very quickly too.
+
+Here's a cross section of what I have now, I've started doing the outer tube and I have arms inside it to hold the wood(?) that the LED will be mounted to.
+![image](https://github.com/user-attachments/assets/72878a55-87df-4601-8168-2927da849cef)
