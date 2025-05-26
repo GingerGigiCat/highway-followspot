@@ -1,4 +1,4 @@
-## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 =  19 hours
+## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 =  20 hours
 
 # Saturday 17 May 2025 - 19:00 - 3 hours
 
@@ -142,3 +142,12 @@ So I pressed the button on the mouser website to get a free cad model of the led
 
 Here's a cross section of what I have now, I've started doing the outer tube and I have arms inside it to hold the wood(?) that the LED will be mounted to.
 ![image](https://github.com/user-attachments/assets/72878a55-87df-4601-8168-2927da849cef)
+
+
+# Monday 26 May - 1 hour
+
+So i was planning to attach the led to the mdf and the mdf to the 3d print using superglue, but uhhh apparently if superglue gets heated up it produces toxic fumes?? so maybe I'll use a 2 part epoxy of some kind of a some other sort of adhesive. from searching, apparently water based adhesives can be good for heat resistance.
+
+I now have this platform (the grey bit) for the LED! The LED goes behind the wood because then it makes it very impossible that the LED will ever crash into the lens, which is good! And if somehow the lens does go to far back, it just hits the mdf which would be absolutely fine.
+
+![image](https://github.com/user-attachments/assets/49973005-e5b3-4cb4-9d46-ed2efa31bf45)
