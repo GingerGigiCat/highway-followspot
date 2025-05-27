@@ -1,4 +1,4 @@
-## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 =  20 hours
+## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 =  21.5 hours
 
 # Saturday 17 May 2025 - 19:00 - 3 hours
 
@@ -12,6 +12,7 @@ Therefore, I want to properly go through with designing and creating a real, bri
 I am also inspired by the [beacon](https://hackclub.slack.com/archives/C0266FRGV/p1723503357605259) that [ruckusmatter](https://hackclub.slack.com/team/U06TZK6EKU6) made during arcade, and i'd like it include a way for my spotlight to have a perfectly straight beam. For reference, the beacon is 17,000 lumens and its colour temperature is 5600k.
 ![image](https://github.com/user-attachments/assets/d08b8b45-19fc-4a85-a123-553740619cb2)
 
+Oh also, the 9/11 memorial [Tribute In Light](https://en.wikipedia.org/wiki/Tribute_in_Light) also inspired me
 
 I've been researching LEDs and PSUs. I've been looking on mouser electronics, and I found 2 LEDs that particularly stand out to me.
 [One of them](https://www.mouser.co.uk/ProductDetail/Cree-LED/CMB3090-R050-000Q0H0A40G?qs=T%252BzbugeAwjgZC0QsY%2FU%2F9w%3D%3D) is by CREE, a well-known and reliable LED manufacturer, so I should be able to rely on it. This one is 48V, which is nice as it is a rather common voltage, and it produces 12,488 lumens and has a colour temperature of 4000k, which is a more pleasant, warmer shade of white than the spotlight. However, I am unsure about this LED as not only is it less bright than the beacon, it also has some conflicting information as it says  it is 1.2A, but that it is 82W, which can not both be true with a voltage of 48V.
@@ -151,3 +152,28 @@ So i was planning to attach the led to the mdf and the mdf to the 3d print using
 I now have this platform (the grey bit) for the LED! The LED goes behind the wood because then it makes it very impossible that the LED will ever crash into the lens, which is good! And if somehow the lens does go to far back, it just hits the mdf which would be absolutely fine.
 
 ![image](https://github.com/user-attachments/assets/49973005-e5b3-4cb4-9d46-ed2efa31bf45)
+
+
+# Tuesday 27 May - 1.5 hours?
+
+I was thinking about my LED mounting and I realised that since the LED is so bright, there's the possibility it could reflect off of the sides of the MDF hole? I don't know if that would be a problem but it's something to think about.
+
+I was also thinking about how I'm going to move the lens, and I've pretty much decided to use a servo I think. I watched [this](https://youtu.be/MDk4SfTNr8M) video which shows how to open up a servo to get a wire out of the internal potentiometer to get feedback on what the current rotation is. So therefore i can find what rotation the user has manually moved it to, and I can store that rotation and then recall it! For storing settings, I'm thinking I'll have a bank of buttons and a SET button, like how a pipe organ stores registrations for stops. 
+
+Also, I discovered that noctua makes fans that can run on 5V, meaning i won't need another psu!
+
+I think I will need heatpipes to draw heat away from the LED, down the tube, and to a cooler towards the back of the light, because there is really not much space inside the tube for a cooler and fan, there's a 7.4cm gap inside which is unlikely to be enough for a big enough heatsink+fan.
+
+I found [this](https://uk.farnell.com/amec-thermasol/mhp-2040a200a/heat-pipe-flat-200mmx40mmx2mm/dp/3972210) heat pipe but £20 seems kind of really expensive...
+
+[This one](https://www.digikey.co.uk/en/products/detail/advanced-thermal-solutions-inc/ATS-HP-F9L200S70W-014/5049697) is from digikey and it can transport 90W of heat, so I might want two of them.  One heat pipe is £3.67. But, it's from digikey which means shipping is £12 unless i spend more than £33. So unless i decide to buy something else also from digikey, that's not going to be that helpful. I could buy the filament on digikey, but that's still not going to take the cost over £33.
+
+Hmmm I realise i may not need nearly as beefy a cooler as i think because uhhh LEDs are supposed to be efficient.=
+~~The LED I'm using doesn't explicitly say the efficiency and the heat output in the datasheet, but it does say that the typical luminous efficacy is 147lm/W, and in a worst case the minimum luminous flux is 15368lm. 15368 divided by 147 is 104.5W, meaning in a worst case the wattage~~ I just realised that lm/W is how many lumens are output for how many watts input, not whatever i thought it was.
+
+I am quite confused with how much of the power input to an led is emitted as heat
+
+I found [this datasheet](https://otmm.lumileds.com/adaptivemedia/6b684cddbefe74c4e4a88ed494320dc871c47925) about the LED that gives some information about its thermals, but nothing specific, but it does give things like how to measure the temperature with a thermocouple and how to mount a heatsink to it which would probably be helpful, and it mentions that you need a heatsink of enough wattage but it doesn't say anything about how to find that heatness :(
+
+[This example](https://www.arduinolearning.com/code/max6675-and-arduino-example.php) I found shows how to use a thermocouple module with an arduino, which should be comparable to using it with the rp2040 i think. I also found [this thermocouple module](https://www.amazon.co.uk/DollaTek-MAX6675-Interface-Thermocouple-Temperature/dp/B07DK8VG87/) on amazon for £4.99. I'll also need a thermocouple wire, and they seem to be cheapest on digikey (shipping >:( ) but mouser has rather pitiful offerings for thermal things it seems which is sad: [1m wire](https://www.digikey.co.uk/en/products/detail/labfacility-ltd/XE-3529-001/25806221)  [30cm wire](https://www.digikey.co.uk/en/products/detail/labfacility-ltd/XE-0428-001/25935742)  A thermocouple works by having two dissimilar metals and when a heat is applied it makes a small voltage apparently, I don't really understand how it works but i thought i'd say something so it sounds like i have some idea about what i'm doing.
+
