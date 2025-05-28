@@ -1,4 +1,4 @@
-## Time so far: 3 + 1 + 2.5 + 1.5 hours  =  8 hours
+## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 =  21.5 hours
 
 # Saturday 17 May 2025 - 19:00 - 3 hours
 
@@ -12,6 +12,7 @@ Therefore, I want to properly go through with designing and creating a real, bri
 I am also inspired by the [beacon](https://hackclub.slack.com/archives/C0266FRGV/p1723503357605259) that [ruckusmatter](https://hackclub.slack.com/team/U06TZK6EKU6) made during arcade, and i'd like it include a way for my spotlight to have a perfectly straight beam. For reference, the beacon is 17,000 lumens and its colour temperature is 5600k.
 ![image](https://github.com/user-attachments/assets/d08b8b45-19fc-4a85-a123-553740619cb2)
 
+Oh also, the 9/11 memorial [Tribute In Light](https://en.wikipedia.org/wiki/Tribute_in_Light) also inspired me
 
 I've been researching LEDs and PSUs. I've been looking on mouser electronics, and I found 2 LEDs that particularly stand out to me.
 [One of them](https://www.mouser.co.uk/ProductDetail/Cree-LED/CMB3090-R050-000Q0H0A40G?qs=T%252BzbugeAwjgZC0QsY%2FU%2F9w%3D%3D) is by CREE, a well-known and reliable LED manufacturer, so I should be able to rely on it. This one is 48V, which is nice as it is a rather common voltage, and it produces 12,488 lumens and has a colour temperature of 4000k, which is a more pleasant, warmer shade of white than the spotlight. However, I am unsure about this LED as not only is it less bright than the beacon, it also has some conflicting information as it says  it is 1.2A, but that it is 82W, which can not both be true with a voltage of 48V.
@@ -43,9 +44,136 @@ I asked [#electronics](https://hackclub.slack.com/archives/C056AMWSFKJ/p17477588
 split the ac input to a 5v psu and the led driver. I'll use a standalone psu rather than making my own, perhaps I'll take apart some random cheap usb plug for it.
 ![image](https://github.com/user-attachments/assets/c418081b-234b-4d86-b918-1f718c68181b)
 
-So, the more powerful LED ([this one](https://hackclub.slack.com/archives/C056AMWSFKJ/p1747758821959079)) is 51.7V. That's weird. But the minimum voltage is 48.8V and the maximum 56.3V, so that gives me some leeway to find a suitable driver for it. Unfortunately the minimum is a smidge higher than the voltage of the meanwell driver I had been looking at. I just found [this](https://www.mouser.co.uk/ProductDetail/MEAN-WELL/ELG-150-54B?qs=sGAEpiMZZMvV8Y9YugmIgqWA%2FF1iXuxj6wUSrTKyFL2ZK2vf%2FH1rsg%3D%3D) meanwell LED driver which looks great, it's 54V so should be within the suitable voltage range for the LED, and it's 150W to go with the 115W LED, so it won't always be running at 100%. And it's only £35 which is close to the old one! and of course it supports the same way of dimming.
+So, the more powerful LED ([this one](https://www.mouser.co.uk/ProductDetail/Lumileds/L2C5-40801825G3200?qs=T3oQrply3y8Ak6%2FCD8N%252BaQ%3D%3D)) is 51.7V. That's weird. But the minimum voltage is 48.8V and the maximum 56.3V, so that gives me some leeway to find a suitable driver for it. Unfortunately the minimum is a smidge higher than the voltage of the meanwell driver I had been looking at. I just found [this](https://www.mouser.co.uk/ProductDetail/MEAN-WELL/ELG-150-54B?qs=sGAEpiMZZMvV8Y9YugmIgqWA%2FF1iXuxj6wUSrTKyFL2ZK2vf%2FH1rsg%3D%3D) meanwell LED driver which looks great, it's 54V so should be within the suitable voltage range for the LED, and it's 150W to go with the 115W LED, so it won't always be running at 100%. And it's only £35 which is close to the old one! and of course it supports the same way of dimming.
 
 Ok, after [@Parker Rupe](https://hackclub.slack.com/team/U08SPJPNKDZ)'s input, I'm not going to take apart some random usb plug, instead I'm going to use [this](https://www.mouser.co.uk/ProductDetail/MEAN-WELL/IRM-10-5?qs=WkdRfq4wf1Mbq1AdfDJBoQ%3D%3D) 5V 10W meanwell power supply, model IRM-10-5 [(datasheet)](https://www.meanwellusa.com/webapp/product/search.aspx?prod=IRM-10). I believe I can just slap it on and stick 240Vac into it, then it will give me 5V that can go into the xiao. Of course, I'm going to ask if someone who knows what they're doing (not me) can check over everything i design.
-So now the PCB looks like this (it looks like less...):
+So now the ~~PCB~~ *schematic* looks like this (it looks like less than before...):
 
 ![image](https://github.com/user-attachments/assets/5eec0b46-98ed-4a7d-a137-6f0642e71501)
+
+
+# Wednesday 21 May 10:15-10:45  18:30-19:00 - 1 hour
+I've been getting the schematic good (I think) and i calculated what are apparently appropriate resistors, according to internet. Behold:
+
+![image](https://github.com/user-attachments/assets/c13f182e-e134-4175-86ca-c8be39994cbd)
+
+I haven't yet added a potentiometer and the motor for lens movement yet. I really don't know how I'm going to do the lens movement. I also don't know what I'm going to do with all the heat the led produces. I'll have to have a heatsink with a fan, maybe a proper cpu type cooler. I'll probably print the actual thing out of PETG, as it might be heat resistant.
+
+
+# Thursday 22 May - 3 hours
+
+I started learning onshape because my school's solidworks license expires soon!
+
+I started modelling the lamp, as seen below, but then i decided it would be helpful to have a model (below below picture) of the lens (below below below) I'm using. I used my calipers :) the model of the lens needs a bit more work. I decided the hexagonal tube at the front should be 12cm wide, and then i will need a bigger box at the back of the light for power bits and stuff (the meanwell led driver is 22cm long...)
+
+![image](https://github.com/user-attachments/assets/04eeb36f-90bf-45a0-815d-02f63ea4c312)
+
+![image](https://github.com/user-attachments/assets/b991e05c-7b3f-4fe5-bca7-e58b3309a519)
+
+![PXL_20250522_220821661 MP](https://github.com/user-attachments/assets/86298f42-259f-43f9-bbb5-934116c96c99)
+
+
+# Friday 23 May - 1 hour
+
+I finished modelling the lens thing! It was shockingly difficult to do the bit where it slopes into a triangle, especially with getting the triangles to line up with the other cylinders using constraints, it's hard to explain.
+
+![image](https://github.com/user-attachments/assets/15b59ba0-bba2-46a4-af04-b0db65e234ac)
+
+
+# Saturday 24 May - 4 hours
+
+I've started modelling thge front part, the inner tube that's going to hold the lens, as is seen below.
+
+![image](https://github.com/user-attachments/assets/23df8567-bc31-4833-a3ca-88a69adc18e5)
+
+I decided to try 3d printing the bit that the lens should in theory thread into because i want sanity and to see if i need a better way of holding the lens in than hoping it threads into the plastic. I'll have to try it again once i have petg, but i don't yet so i'm just doing in pla to see if the dimension i chose is good. The circle the lens should thread into is 0.5mm smaller than the outer diameter of the threads on the lens, so hopefully that will be good and hopefully my printer's accurate enough.
+
+![image](https://github.com/user-attachments/assets/21090947-3fa4-4458-a2a4-0e643194da3b)
+
+Oooo look at it go
+![PXL_20250524_175748476 MP](https://github.com/user-attachments/assets/a4df2fab-09a5-4b9d-a1c8-8e9d72725a9b)
+
+
+![image](https://github.com/user-attachments/assets/7f3c9165-76e5-4f4f-b74b-91f3f7b951b9)
+
+
+It doesn't fit :(
+It almost goes on but not quite. I can almost stretch it on but it doesn't stretch. I'm thinking if i make the holder a many sided shape of some description (hexagon maybe?) and then i should have room for it to stretch (maybe??) while still holding it??? maybe???? but then I'm not sure how I'll hold the flexible bit holding the lens to the actual tube in a way that is rigid but also allows the lens holder to flex a bit...
+
+I just thought that I could make something to clip into the weird cut out in the lens with the slanty edges, the one that took me ages to model. Still has the problem of making sure it's flexible though
+
+Ok i think clipping into the slopey bit isn't going to be possible because it's too close to the front to have any flexibility
+
+So uhhhh I cooked up this monstrosity :pf:
+![image](https://github.com/user-attachments/assets/8589e0a8-5027-44fc-a314-21884361711c)
+
+Here's how it _should_ go together with lens
+![image](https://github.com/user-attachments/assets/90f1ab17-44e2-4018-8fbf-e5fae9cbdacc)
+
+Maybe it will be too thin?
+
+Maybe it won't be flexible enough?
+
+Maybe it will just delaminate from the layer below?
+
+Maybe it will collapse when it's being printed? Hopefully the archedness is good enough that it won't need supports...
+
+I don't know, but lets find out
+
+![PXL_20250524_223147108](https://github.com/user-attachments/assets/6bba273d-c451-4613-9132-98b5e48fc3e7)
+![PXL_20250524_223842524 MP](https://github.com/user-attachments/assets/c75189f9-0a7a-4cb4-9ec0-71825fddb536)
+
+That was such a scary print to watch but IT WORKS!!!!!!!!!!!!!!!!!!!!! I am so happy
+
+goodnight github
+
+
+# Sunday 25 May - 2 hours
+
+I edited the holder a little so the clippy bits go a little further inwards, just to give a slightly tighter fit on the lens. I also made it a teeny bit less long, because otherwise i think the front of the tube would have stopped the lens from going all the way in properly.
+
+Here are the dimensions of the LED, I don't know if I'll directly hold it with PETG or if I'll make a wooden bit to hold it...
+![image](https://github.com/user-attachments/assets/ce651a46-9651-45ee-bd76-3ecea05867a8)
+
+I really don't know how i'm going to mount the LED, it will get HOT and any normal filaments will just warp. I also don't know how I'm going to mount the cooler to it, and I also don't know how the temperature sensing is going to work. Oh and i'll probably need 12v power for the fan.... yay another power supply...
+
+Over lunch I decided I'll probably use some 3mm mdf i have, and cut out a whole for the led and cooler to hold the led. If that makes any sense
+
+So I pressed the button on the mouser website to get a free cad model of the led and it just worked! They did it very quickly too.
+
+Here's a cross section of what I have now, I've started doing the outer tube and I have arms inside it to hold the wood(?) that the LED will be mounted to.
+![image](https://github.com/user-attachments/assets/72878a55-87df-4601-8168-2927da849cef)
+
+
+# Monday 26 May - 1 hour
+
+So i was planning to attach the led to the mdf and the mdf to the 3d print using superglue, but uhhh apparently if superglue gets heated up it produces toxic fumes?? so maybe I'll use a 2 part epoxy of some kind of a some other sort of adhesive. from searching, apparently water based adhesives can be good for heat resistance.
+
+I now have this platform (the grey bit) for the LED! The LED goes behind the wood because then it makes it very impossible that the LED will ever crash into the lens, which is good! And if somehow the lens does go to far back, it just hits the mdf which would be absolutely fine.
+
+![image](https://github.com/user-attachments/assets/49973005-e5b3-4cb4-9d46-ed2efa31bf45)
+
+
+# Tuesday 27 May - 1.5 hours?
+
+I was thinking about my LED mounting and I realised that since the LED is so bright, there's the possibility it could reflect off of the sides of the MDF hole? I don't know if that would be a problem but it's something to think about.
+
+I was also thinking about how I'm going to move the lens, and I've pretty much decided to use a servo I think. I watched [this](https://youtu.be/MDk4SfTNr8M) video which shows how to open up a servo to get a wire out of the internal potentiometer to get feedback on what the current rotation is. So therefore i can find what rotation the user has manually moved it to, and I can store that rotation and then recall it! For storing settings, I'm thinking I'll have a bank of buttons and a SET button, like how a pipe organ stores registrations for stops. 
+
+Also, I discovered that noctua makes fans that can run on 5V, meaning i won't need another psu!
+
+I think I will need heatpipes to draw heat away from the LED, down the tube, and to a cooler towards the back of the light, because there is really not much space inside the tube for a cooler and fan, there's a 7.4cm gap inside which is unlikely to be enough for a big enough heatsink+fan.
+
+I found [this](https://uk.farnell.com/amec-thermasol/mhp-2040a200a/heat-pipe-flat-200mmx40mmx2mm/dp/3972210) heat pipe but £20 seems kind of really expensive...
+
+[This one](https://www.digikey.co.uk/en/products/detail/advanced-thermal-solutions-inc/ATS-HP-F9L200S70W-014/5049697) is from digikey and it can transport 90W of heat, so I might want two of them.  One heat pipe is £3.67. But, it's from digikey which means shipping is £12 unless i spend more than £33. So unless i decide to buy something else also from digikey, that's not going to be that helpful. I could buy the filament on digikey, but that's still not going to take the cost over £33.
+
+Hmmm I realise i may not need nearly as beefy a cooler as i think because uhhh LEDs are supposed to be efficient.=
+~~The LED I'm using doesn't explicitly say the efficiency and the heat output in the datasheet, but it does say that the typical luminous efficacy is 147lm/W, and in a worst case the minimum luminous flux is 15368lm. 15368 divided by 147 is 104.5W, meaning in a worst case the wattage~~ I just realised that lm/W is how many lumens are output for how many watts input, not whatever i thought it was.
+
+I am quite confused with how much of the power input to an led is emitted as heat
+
+I found [this datasheet](https://otmm.lumileds.com/adaptivemedia/6b684cddbefe74c4e4a88ed494320dc871c47925) about the LED that gives some information about its thermals, but nothing specific, but it does give things like how to measure the temperature with a thermocouple and how to mount a heatsink to it which would probably be helpful, and it mentions that you need a heatsink of enough wattage but it doesn't say anything about how to find that heatness :(
+
+[This example](https://www.arduinolearning.com/code/max6675-and-arduino-example.php) I found shows how to use a thermocouple module with an arduino, which should be comparable to using it with the rp2040 i think. I also found [this thermocouple module](https://www.amazon.co.uk/DollaTek-MAX6675-Interface-Thermocouple-Temperature/dp/B07DK8VG87/) on amazon for £4.99. I'll also need a thermocouple wire, and they seem to be cheapest on digikey (shipping >:( ) but mouser has rather pitiful offerings for thermal things it seems which is sad: [1m wire](https://www.digikey.co.uk/en/products/detail/labfacility-ltd/XE-3529-001/25806221)  [30cm wire](https://www.digikey.co.uk/en/products/detail/labfacility-ltd/XE-0428-001/25935742)  A thermocouple works by having two dissimilar metals and when a heat is applied it makes a small voltage apparently, I don't really understand how it works but i thought i'd say something so it sounds like i have some idea about what i'm doing.
+
