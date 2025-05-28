@@ -216,6 +216,8 @@ ooo a video too
 
 https://github.com/user-attachments/assets/37b45619-cd76-4aad-be02-627f6d1e754e
 
+ok what why does github think it's just sound i promise it's a video if you try hard enough
+
 I made it vaguely store position values, but it's a little sqwonky in that it keeps on thinking the pin is connected to + even when it's not, it's very odd. this means that when you press one and then press another, it will quickly flap between the two because for some time it thinks both are being pressed...
 
 I attempted some onshaping today, but i just drew some lines so i don't think you really need to see that, it was for estimating the needed heatpipe length, and i drew the start of a sketch for mounting the servo (it's 3 lines so far)
