@@ -1,4 +1,4 @@
-## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 =  21.5 hours
+## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3.5 =  25 hours
 
 # Saturday 17 May 2025 - 19:00 - 3 hours
 
@@ -177,3 +177,47 @@ I found [this datasheet](https://otmm.lumileds.com/adaptivemedia/6b684cddbefe74c
 
 [This example](https://www.arduinolearning.com/code/max6675-and-arduino-example.php) I found shows how to use a thermocouple module with an arduino, which should be comparable to using it with the rp2040 i think. I also found [this thermocouple module](https://www.amazon.co.uk/DollaTek-MAX6675-Interface-Thermocouple-Temperature/dp/B07DK8VG87/) on amazon for £4.99. I'll also need a thermocouple wire, and they seem to be cheapest on digikey (shipping >:( ) but mouser has rather pitiful offerings for thermal things it seems which is sad: [1m wire](https://www.digikey.co.uk/en/products/detail/labfacility-ltd/XE-3529-001/25806221)  [30cm wire](https://www.digikey.co.uk/en/products/detail/labfacility-ltd/XE-0428-001/25935742)  A thermocouple works by having two dissimilar metals and when a heat is applied it makes a small voltage apparently, I don't really understand how it works but i thought i'd say something so it sounds like i have some idea about what i'm doing.
 
+
+# Wednesday 28 May - 3.5 hours
+Ok! I found [this video](https://www.youtube.com/watch?v=Lqbyu5BGthc&t=118s) which shows how to calculate the heat power output of an LED! yippee!
+
+Now all I have to do is mentally process this scary looking equation:
+![image](https://github.com/user-attachments/assets/68ce762b-1df4-45d0-9c0a-b0b3f6b53002)
+
+I could not find a value for K in the datasheet (K is the luminous efficacy of radiation, and you need to know the radiant flux to find that, which isn't in the datasheet) so I searched how to find the heat power output of an led and apparently LEDs generally output 80% of energy input as heat, so apparently you should generally design for all of the power input to be output as heat. hhhhhhhhhhhhhhhhhhhhhhh. well anyway that was some nice research and wikipediaing, and i got to see a video of a funny looking man talk to me about LEDs for 5 minutes, many times
+
+(that was 30 minutes)
+
+Ok! Mouser does in fact have heat pipes! After a lot of looking and figuring out datasheets, I quite like the [ATS-HP-F7L200S65W-018](https://www.mouser.co.uk/ProductDetail/Advanced-Thermal-Solutions/ATS-HP-F7L200S65W-018?qs=lc2O%252BfHJPVYfQgWmPy67UQ%3D%3D) heat pipe (catchy name, I know) [(datasheet)](https://www.mouser.co.uk/datasheet/2/596/Heat_Pipes-1480426.pdf) (The picture on mouser has multiple heat pipes with a heatsink attached but I believe it is actually just a heatpipe. It can transfer up to 61W of heat energy, so I will have 2 of them to remove up to 122W of heat which should be more than enough. Each heatpipe is 11.2mm wide and 3.5mm tall and 200mm long and costs only £3.96 yay. Two heatpipes will take up 22.4mm roughly and be £7.92. If I decide i need another heatpipe, I can get another one and it will still fit on the 38mm LED. Perhaps a 150mm long heat pipe will be enough? I'll keep designing my light and decide what length I need. For 150mm, the [ATS-HP-F5L150S40W-025](https://www.mouser.co.uk/ProductDetail/Advanced-Thermal-Solutions/ATS-HP-F5L150S40W-025?qs=lc2O%252BfHJPVbaquzC%2FXHGQg%3D%3D) looks good, it's 59W and £3.23, and 8mm wide.
+
+(that was also probably 30 minutes)
+
+[This towerpro sg90](https://www.mouser.co.uk/ProductDetail/Soldered/101246?qs=IKkN%2F947nfCky%252BicgAH2DA%3D%3D) servo motor looks good, it's on mouser meaning i can have my free shipping and it's £4.82. Apparently it needs 5V power but the logic can be run at 3v so I can use it with the rp2040 yay. The datasheet says it is both 9 grams and 14 grams though. I guess it's 14 grams including the wire? the datasheet is very little but it's common so sure. I feel like the electronics shop near me would have one?
+Also totally unrelated but if you invert the phase of one channel of stereo music and then mix them down to mono, it very often filters out the voice which is nice so i can have songs i like without the singer, or often just with the backing vocals, and without actively looking for an instrumental version.
+
+And that servo even has a 3d model already!
+
+I found some servo I had lying around which is a knock-off SG90, so i decided I'd solder a sensor pin to it like in the video i linked
+![PXL_20250528_144646962 MP~2](https://github.com/user-attachments/assets/93f65cf8-d6f5-4be7-9680-aa3d9309c177)
+
+I've been trying out the servo with my arduino uno r4 wifi, and i spent ages confused at why it was moving in such big steps. I assumed it's because it's a cheap knockoff servo, but when trying to search for why this was happening i found someone else who has an uno r4 and their stepper motor was moving in large steps. Apparently, there was a problem with uno r4s which had something to do with the PWM duty cycle, so i did an update and now it's fine! That was weird, though. Using the arduino serial plotter, I found that there is a very linear correlation between the sense pin of the servo and the angle it's rotated to, which is nice because it means i can do some code to just find a scale and offset to convert from analogue input to an angle which can be stored and sent to the servo. Yes I'm doing this to procrastinate figuring out how I'm mounting the servo in the spotlight. Below is a section of the serial plotter where the blue line is the target angle and the green line is the analogue value (which i did some manual scaling of)
+
+![image](https://github.com/user-attachments/assets/ef3d80b0-fcc9-45e4-9283-8ff3e43c955b)
+
+I was initially trying to do a sweep of angles and then map each angle to an analogue input, but that was too complex as i think instead i can just get two points and figure it out.
+
+Maths!
+![image](https://github.com/user-attachments/assets/9487c5b0-52e1-42d8-b8e2-b6b972bbf3f1)
+Revising for my maths GCSE next week well
+
+I even commited the code i did to the github repo! I just added a feature that lets you set a range of motion and the servo will stop you from going further by activating when it's past the motion and moving back until it's within the range, then deactivating again.
+
+ooo a video too
+
+https://github.com/user-attachments/assets/37b45619-cd76-4aad-be02-627f6d1e754e
+
+ok what why does github think it's just sound i promise it's a video if you try hard enough
+
+I made it vaguely store position values, but it's a little sqwonky in that it keeps on thinking the pin is connected to + even when it's not, it's very odd. this means that when you press one and then press another, it will quickly flap between the two because for some time it thinks both are being pressed...
+
+I attempted some onshaping today, but i just drew some lines so i don't think you really need to see that, it was for estimating the needed heatpipe length, and i drew the start of a sketch for mounting the servo (it's 3 lines so far)
