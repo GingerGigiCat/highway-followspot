@@ -22,7 +22,7 @@ float store4;
 
 bool do_movement_limits = true;
 int upper_movement_limit = 160;
-int lower_movement_limit = 20;
+int lower_movement_limit = 35;
 
 float read_analogue_input_avg(int delay_time=5, int readings=50) {
   float avg_read;
@@ -51,11 +51,12 @@ void setup() {
 
   theservo.attach(servo_pin);
   Serial.begin(115200);
-  pinMode(set_pin, INPUT);
-  pinMode(store1_pin, INPUT);
-  pinMode(store2_pin, INPUT);
-  pinMode(store3_pin, INPUT);
-  pinMode(store4_pin, INPUT);
+  pinMode(set_pin, INPUT_PULLDOWN);
+  pinMode(store1_pin, INPUT_PULLDOWN);
+  pinMode(store2_pin, INPUT_PULLDOWN);
+  pinMode(store3_pin, INPUT_PULLDOWN);
+  pinMode(store4_pin, INPUT_PULLDOWN);
+  pinMode(servo_feedback_pin, INPUT_PULLDOWN);
 
 
   theservo.write(59);
@@ -118,24 +119,26 @@ float angle;
 void loop() {
 
   // put your main code here, to run repeatedly:
-  reading = read_analogue_input_avg(1, 3);
+  reading = read_analogue_input_avg(1, 10);
   angle = wiper_to_angle(reading);
 
   if (do_movement_limits) {
-    if (angle <= lower_movement_limit) {
-      if (!theservo.attached()) {
+    if ((angle <= lower_movement_limit || angle >= upper_movement_limit) && !theservo.attached()) {
+        Serial.println("hey!");
         theservo.attach(servo_pin);
       }
-      theservo.write(angle + 4);
+
+    if (angle <= lower_movement_limit+10) {
+      theservo.write(angle + 2);
     }
-    else if (angle >= upper_movement_limit) {
-      if (!theservo.attached()) {
-        theservo.attach(servo_pin);
-      }
+    else if (angle >= upper_movement_limit-10) {
       theservo.write(angle - 4);
     }
-    else {
+
+    if ((lower_movement_limit+10 <= angle) && (angle <= upper_movement_limit-5) && theservo.attached()) {
+      theservo.write(angle);
       theservo.detach();
+      Serial.println("yay");
     }
   }
 
