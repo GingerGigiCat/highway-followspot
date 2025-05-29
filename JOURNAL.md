@@ -1,4 +1,4 @@
-## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3.5 =  25 hours
+## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 =  28 hours
 
 # Saturday 17 May 2025 - 19:00 - 3 hours
 
@@ -178,7 +178,7 @@ I found [this datasheet](https://otmm.lumileds.com/adaptivemedia/6b684cddbefe74c
 [This example](https://www.arduinolearning.com/code/max6675-and-arduino-example.php) I found shows how to use a thermocouple module with an arduino, which should be comparable to using it with the rp2040 i think. I also found [this thermocouple module](https://www.amazon.co.uk/DollaTek-MAX6675-Interface-Thermocouple-Temperature/dp/B07DK8VG87/) on amazon for £4.99. I'll also need a thermocouple wire, and they seem to be cheapest on digikey (shipping >:( ) but mouser has rather pitiful offerings for thermal things it seems which is sad: [1m wire](https://www.digikey.co.uk/en/products/detail/labfacility-ltd/XE-3529-001/25806221)  [30cm wire](https://www.digikey.co.uk/en/products/detail/labfacility-ltd/XE-0428-001/25935742)  A thermocouple works by having two dissimilar metals and when a heat is applied it makes a small voltage apparently, I don't really understand how it works but i thought i'd say something so it sounds like i have some idea about what i'm doing.
 
 
-# Wednesday 28 May - 3.5 hours
+# Wednesday 28 May - 3 hours
 Ok! I found [this video](https://www.youtube.com/watch?v=Lqbyu5BGthc&t=118s) which shows how to calculate the heat power output of an LED! yippee!
 
 Now all I have to do is mentally process this scary looking equation:
@@ -221,3 +221,53 @@ ok what why does github think it's just sound i promise it's a video if you try 
 I made it vaguely store position values, but it's a little sqwonky in that it keeps on thinking the pin is connected to + even when it's not, it's very odd. this means that when you press one and then press another, it will quickly flap between the two because for some time it thinks both are being pressed...
 
 I attempted some onshaping today, but i just drew some lines so i don't think you really need to see that, it was for estimating the needed heatpipe length, and i drew the start of a sketch for mounting the servo (it's 3 lines so far)
+
+
+# Thursday 29 May - 3.5 hours
+
+Agggggh I wrote so much for today, i should really start copying out what i've written so edge can't discard the tab and get rid of everything. Normally it shows the prompt to restore what i had, but not this time i guess :(
+Here's my attempt at vaguely recreating what i wrote, with trawling through my clipboard history for screenshots:
+
+Woah look at my servo mount!
+
+![image](https://github.com/user-attachments/assets/30a1618c-f39a-4a3b-83b5-ad2f013301f7)
+
+
+I did some more maths to figure out a probably good diameter for the cog
+
+![image](https://github.com/user-attachments/assets/9530c22d-9e97-40a4-9dee-8ab2f1e11ea7)
+
+
+I watched [this somewhat vague video](https://www.youtube.com/watch?v=wLZq1ZXhPfE) to figure out how to make the pinion (straight cog thing).
+
+I had this, first, but...
+
+![Screenshot from 2025-05-29 16-42-44](https://github.com/user-attachments/assets/f4d95da0-52f8-4e9e-bd1b-d5c415ab0a64)
+
+...i then realised that the pinion would really want to snap if it was printed with the rest of the inner tube, so i redesigned it to be glued onto the inner tube, meaning it can be printed flat, which will be much stronger due to the orientation of the layer lines.
+And now i have this:
+
+![image](https://github.com/user-attachments/assets/b525db83-f7b6-4c01-8003-78c38efa3701)
+
+
+I may want to swap the SG90 servo for an MG90S, it's basically the same thing but with metal gears which are finer, meaning it should be quieter, stronger, and not go crunchy when you push it too much like mine does.
+
+I also edited the code a bit to remove some weirdness with the rotation limiting, which included fixing a bug where occasionally the servo would decide to suddenly rotate all the way to the other side
+
+Also, I shortened the length of the outer tube from whatever it was before (180 maybe?) to 155mm which is more fitting.
+
+I just added a vent so it doesn't bake and melt itself!
+
+![image](https://github.com/user-attachments/assets/5d959766-bbde-4013-83c0-7cd497dd1861)
+
+
+From a quick search, [this cpu cooler](https://www.amazon.co.uk/Thermalright-AXP90-X53-Profile-TL-9015-Technology/dp/B0BJPWX8B5/) looks like it could be good
+
+Oooooo how about an AIO cooler? It's got tubes so i won't have to worry about heat pipes, although i will need to get 12V... I think I might just stick to heat pipes and a heat sink in the back with a 5v fan...
+
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA the led driver is out of stock 
+Oh and I just realised: "Product available only to OEM/EMS and design business customers. Product is not shipped to consumers in the EU or the UK" D:
+It's supposed to come back in stock on mouser on 14/08/2025, which would be much too late. It's also out of stock on digikey, but with the short date of 13/06/2025 to get it back in stock. hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+And the 5v psu is also business only WHY IS IT SO UNOBVIOUS???? is hack club a business? probably doesn't count...
+
+Um so that's inconvenient
