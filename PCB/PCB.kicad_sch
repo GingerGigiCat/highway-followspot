@@ -2256,6 +2256,16 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 125.73) (xy 123.19 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e905be4-6334-4cef-9d5d-14e6d0de3a8a")
+	)
+	(wire
+		(pts
 			(xy 69.85 110.49) (xy 80.01 110.49)
 		)
 		(stroke
@@ -2326,6 +2336,16 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 111.76) (xy 123.19 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f5507c9-aeb5-4d3d-8049-fcb7351425e0")
+	)
+	(wire
+		(pts
 			(xy 45.72 62.23) (xy 48.26 62.23)
 		)
 		(stroke
@@ -2373,6 +2393,16 @@
 			(type default)
 		)
 		(uuid "aca52fbe-5be7-45df-8dbb-4e934567c74b")
+	)
+	(wire
+		(pts
+			(xy 110.49 125.73) (xy 123.19 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b73eec49-8c46-4c9d-920f-6600c8b9e1a1")
 	)
 	(wire
 		(pts
@@ -2436,6 +2466,16 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 86.36) (xy 128.27 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edd392df-b5dc-4590-91a8-e108c4b0dcdf")
+	)
+	(wire
+		(pts
 			(xy 48.26 62.23) (xy 48.26 99.06)
 		)
 		(stroke
@@ -2483,6 +2523,76 @@
 			(justify left bottom)
 		)
 		(uuid "f27ba0f6-af32-4946-8842-58b99a2d673a")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 123.19 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0370e898-e7e0-42c2-84c1-1edae01ccd5f")
+		(property "Reference" "R2"
+			(at 125.73 114.2999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "42Ω  0.12W"
+			(at 125.73 116.8399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.412 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 123.19 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 123.19 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3cbe71c1-3f11-48dc-8a4c-2b71408634c9")
+		)
+		(pin "1"
+			(uuid "22e14031-934b-4b83-a0a1-2318ec2c3bcc")
+		)
+		(instances
+			(project ""
+				(path "/cb8a0eb9-023d-474b-952c-ea4eac5ee9fe"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
