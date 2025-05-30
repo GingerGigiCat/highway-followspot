@@ -129,10 +129,10 @@ void loop() {
       }
 
     if (angle <= lower_movement_limit+10) {
-      theservo.write(angle + 2);
+      theservo.write(angle + 5);
     }
     else if (angle >= upper_movement_limit-10) {
-      theservo.write(angle - 4);
+      theservo.write(angle - 5);
     }
 
     if ((lower_movement_limit+10 <= angle) && (angle <= upper_movement_limit-5) && theservo.attached()) {
