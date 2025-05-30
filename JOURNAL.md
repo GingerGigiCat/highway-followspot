@@ -271,3 +271,29 @@ It's supposed to come back in stock on mouser on 14/08/2025, which would be much
 And the 5v psu is also business only WHY IS IT SO UNOBVIOUS???? is hack club a business? probably doesn't count...
 
 Um so that's inconvenient
+
+
+# Friday 30 May - 3 hours
+
+Wow i really don't learn do i, i just did the same thing where i had written a bunch and then the tab got discarded...
+
+lcsc had the 5v psu for cheaper, but with the handling cost and shipping it's not worth it so i'm just doing digikey.
+
+[LED on digikey](https://www.digikey.co.uk/en/products/detail/lumileds/L2C5-40801825G3200/7344822) for £29.07+VAT
+
+[LED Driver on digikey](https://www.digikey.co.uk/en/products/detail/mean-well-usa-inc/ELG-150-54B/7702975) for £37.98+VAT
+
+[5V 10W PSU on digikey](https://www.digikey.co.uk/en/products/detail/mean-well-usa-inc/IRM-10-5/7704657) for £6.45+VAT
+
+I found [this little 2W 5V to 12V converter](https://www.digikey.co.uk/en/products/detail/mean-well-usa-inc/SMU02L-12/7706871) for £3.89+VAT on digikey, which is much cheaper than buying a £20 noctua 5v fan, as i can just use the normal 12V fan that comes with whatever heatsink i get
+
+I feel like i don't need to pwm the fan, it can just run at full speed. I considered not having a thermocouple, but i think it should so that it can know if it's destroying itself.
+
+Helpfully, I found this schematic on [this datasheet](https://blog.embeddedexpert.io/?p=806) on how to use a max6675 thermocouple chip in a circuit, meaning i don't have to buy an overpriced thing, it can just integrate into my pcb!
+![image](https://github.com/user-attachments/assets/ca26b6a0-b29d-4406-a404-f1fc146a89ad)
+
+Hmm i might use [this MAX31855KASA-T](https://www.digikey.co.uk/en/products/detail/analog-devices-inc-maxim-integrated/MAX31855KASA-T/2591213) for £7.05+VAT instead, it's basically the same thing but actually in production and at 3v. ([Datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/max31855.pdf))
+
+I've (maybe?) finished my schematic! I used every GPIO pin, so hopefully i won't find i missed something and need another. If i do, i'll sacrifice a switch. I added a red LED to indicate stuff, like flashing when going past the movement limit, and lighting up when the led is too hot. I also included a circuit for the thermocouple, and i realised a switch would be good for the main power input.
+
+![image](https://github.com/user-attachments/assets/f5922a38-4b57-407d-acf9-76320024962c)
