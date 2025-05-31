@@ -1,4 +1,4 @@
-## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 =  28 hours
+## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 + 0.5 =  28.5 hours
 
 # Saturday 17 May 2025 - 19:00 - 3 hours
 
@@ -297,3 +297,8 @@ Hmm i might use [this MAX31855KASA-T](https://www.digikey.co.uk/en/products/deta
 I've (maybe?) finished my schematic! I used every GPIO pin, so hopefully i won't find i missed something and need another. If i do, i'll sacrifice a switch. I added a red LED to indicate stuff, like flashing when going past the movement limit, and lighting up when the led is too hot. I also included a circuit for the thermocouple, and i realised a switch would be good for the main power input.
 
 ![image](https://github.com/user-attachments/assets/f5922a38-4b57-407d-acf9-76320024962c)
+
+
+# Saturday 31 May - 0.5 hours
+
+I looked around my house for some components to see what i already have and won't have to buy, and i found 2 suitable(?) resistors, and a red led! I also did a bit of assigning of symbols to footprints, which included having to make some footprints myself.
