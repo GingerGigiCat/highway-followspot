@@ -1,4 +1,4 @@
-## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 + 0.5 =  28.5 hours
+## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 + 0.5 + 0.25 =  28.75 hours
 
 # Saturday 17 May 2025 - 19:00 - 3 hours
 
@@ -302,3 +302,10 @@ I've (maybe?) finished my schematic! I used every GPIO pin, so hopefully i won't
 # Saturday 31 May - 0.5 hours
 
 I looked around my house for some components to see what i already have and won't have to buy, and i found 2 suitable(?) resistors, and a red led! I also did a bit of assigning of symbols to footprints, which included having to make some footprints myself.
+
+
+# Sunday 01 June - 0.25 hours
+
+happy pride month
+
+i did a little more footprint making for things, namely the led driver. i also found a good looking fuse holder, and i think a 2.5A 5x20mm fuse should be good.
