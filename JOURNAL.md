@@ -1,4 +1,4 @@
-## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 + 0.5 + 0.25 =  28.75 hours
+## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 + 0.5 + 0.25 + 1.25 = 30 hours
 
 # Saturday 17 May 2025 - 19:00 - 3 hours
 
@@ -309,3 +309,23 @@ I looked around my house for some components to see what i already have and won'
 happy pride month
 
 i did a little more footprint making for things, namely the led driver. i also found a good looking fuse holder, and i think a 2.5A 5x20mm fuse should be good.
+
+
+# Wednesday 04 June - 1.25 hours
+
+I realised i'm fairly sure i don't need a resistor between the led driver and the LED, as it is a constant current driver so will regulate the current itself (hopefully?).
+
+I was also looking at the thermocouple chip datasheet for no specific reason and found that the max31855 (the newer one that i switched to) suggests **not** having the negative of the thermocouple connected to ground because of something about power supply noise. There was also a revision of the datasheet that quietly adds the suggestion of "a 10nF differential capacitor to the T+/T- pins", to help reduce noise in measurements. I guess i'll do that then, no idea what differential means though.
+
+Also apparently the wattage of the LED isn't a set maximum??? The graph below (blue line) shows that it can be as high as 250W at just under 56V. Interesting. Perhaps I should allow for more heatpipes then
+
+![image](https://github.com/user-attachments/assets/0ad89a8e-4ccc-406d-8af5-938dfe313840)
+
+
+I used a [funny calculator](https://www.digikey.co.uk/en/resources/conversion-calculators/conversion-calculator-pcb-trace-width?msockid=34b1ed09ca0362e112bdf8ebcbe36317) online to figure out that my AC traces should be about 2.5mm thick for the absolute maximum of 2.5A i'm having.
+
+I've also been finding components like resistors and capacitors. I found 2 roughly 40 ohm resistors which should be perfect for the optocoupler and red led, and I found a red led. I put matching footprints for them into the footprint assignment. I also found a [0.1uF capacitor on digikey](https://www.digikey.co.uk/en/products/detail/vishay-beyschlag-draloric-bc-components/K104K15X7RF5TL2/286538) for £0.18, as well as [this fuse holder](https://www.schurter.com/en/datasheet/typ_OGN.pdf), which i both put footprints for.
+
+I also realised that the pin header I selected for the servo to connect to was actually tiny, thanks to my friend wanting to look at the 3d model and me realising the servo pins were tiny compared to the fan header. So i replaced it for a 2.54mm type header.
+
+Now all that's left to do in the footprint assignment is the buttons, the connector for the thermocouple, and the holes for the led driver.
