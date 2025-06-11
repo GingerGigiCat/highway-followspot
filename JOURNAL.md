@@ -1,4 +1,4 @@
-## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 + 0.5 + 0.25 + 1.25 + 4 = 34 hours
+## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 + 0.5 + 0.25 + 1.25 + 4 + 0.5 = 34.5 hours
 
 # Saturday 17 May 2025 - 19:00 - 3 hours
 
@@ -343,3 +343,18 @@ Here's what i've got so far:
 ![image](https://github.com/user-attachments/assets/a03767a5-ea10-483e-87e3-25bc4ee5a6ad)
 
 can't write much sorry i need to sleep
+
+
+# Wednesday 11 June - 0.5 hours
+
+I found that I can get an IEC power input thing that has a spot for a fuse! https://www.digikey.co.uk/en/products/detail/dit/DAC-13F/18681314 Meaning I can remove my internal fuse and the fuse can be user replaceable! This is also safer as it means that it is fused the moment it enters the spotlight, so the fuse will stop anything bad that could happen in the free wiring to the switch and to the board!
+
+![image](https://github.com/user-attachments/assets/18a04461-7e53-48b9-ae0b-be7cfa5eb288)
+
+Oh yeah, yesterday I found it would be cheaper to buy the thermocouple amplifier and the 5v psu at lcsc, even with the added handling and shipping fees!
+
+I just found that LCSC does iec power input things that not only have a spot for a fuse in them, but also have a switch in them! Even better!
+
+I also added to the spreadsheet
+
+![image](https://github.com/user-attachments/assets/95c2779f-a732-4a9b-bfea-2cc7f187d6e9)
