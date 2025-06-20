@@ -1,4 +1,4 @@
-## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 + 0.5 + 0.25 + 1.25 = 30 hours
+## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 + 0.5 + 0.25 + 1.25 + 4 + 0.5 = 34.5 hours
 
 # Saturday 17 May 2025 - 19:00 - 3 hours
 
@@ -329,3 +329,46 @@ I've also been finding components like resistors and capacitors. I found 2 rough
 I also realised that the pin header I selected for the servo to connect to was actually tiny, thanks to my friend wanting to look at the 3d model and me realising the servo pins were tiny compared to the fan header. So i replaced it for a 2.54mm type header.
 
 Now all that's left to do in the footprint assignment is the buttons, the connector for the thermocouple, and the holes for the led driver.
+
+
+# Tuesday 10 June - 4 hours
+
+I've been doing my PCB, I started with the AC side, and then did the lower power side. It took me a while to route it and do good placements for the footprints, but it should be done now! yay!
+
+![image](https://github.com/user-attachments/assets/393ccb40-11d4-4f31-9c3e-305c889db638)
+
+I've also made a spreadsheet of all the components, although i did just realise it's missing the servo and pin headers, although i can hopefully get those from my local electronics shop. OH THE OPTOISOLATOR!
+Here's what i've got so far:
+
+![image](https://github.com/user-attachments/assets/a03767a5-ea10-483e-87e3-25bc4ee5a6ad)
+
+can't write much sorry i need to sleep
+
+
+# Wednesday 11 June - 0.5 hours
+
+I found that I can get an IEC power input thing that has a spot for a fuse! https://www.digikey.co.uk/en/products/detail/dit/DAC-13F/18681314 Meaning I can remove my internal fuse and the fuse can be user replaceable! This is also safer as it means that it is fused the moment it enters the spotlight, so the fuse will stop anything bad that could happen in the free wiring to the switch and to the board!
+
+![image](https://github.com/user-attachments/assets/18a04461-7e53-48b9-ae0b-be7cfa5eb288)
+
+Oh yeah, yesterday I found it would be cheaper to buy the thermocouple amplifier and the 5v psu at lcsc, even with the added handling and shipping fees!
+
+I just found that LCSC does iec power input things that not only have a spot for a fuse in them, but also have a switch in them! Even better!
+
+I also added to the spreadsheet
+
+![image](https://github.com/user-attachments/assets/95c2779f-a732-4a9b-bfea-2cc7f187d6e9)
+
+
+# Saturday 14 June - 1 hour
+
+I assigned 3d models to almost all the parts in my PCB, except the 5v to 12v converter which i unfortunately couldn't find online. Here's pictures! Oh yeah, i discovered kicad has an option to enable ray tracing which is entertaining to watch  my laptop struggle with
+
+![image](https://github.com/user-attachments/assets/4b7081e6-78dd-4417-a6ef-4139a1d6e4a4)
+
+![image](https://github.com/user-attachments/assets/5dbba933-6428-41af-94d7-db1db7742e56)
+
+I also gave the board edge cuts, with rounded corners (yummy), as well as mounting holes, and a cut out to give room for the power plug.
+I then imported it to onshape, although for some reason it decided to lose the colours of the components :/
+
+![image](https://github.com/user-attachments/assets/65f9a6ad-cf7e-4bd0-ad6b-0f7aa82a8a32)
