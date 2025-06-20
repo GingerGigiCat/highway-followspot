@@ -1,0 +1,112 @@
+(footprint "Big Lumileds LED"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "Big LED"
+		(at 0 -3 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "c8c18190-9efa-48f5-96d5-85cf02a3eae8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Lumileds LED"
+		(at 0 -1.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "17274edb-0452-459f-9296-6a8877d789d7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c49bf5f8-7f1d-458b-8f1e-13e38741a42c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "aea6fc4e-c91f-4523-a217-f741fec931d6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_text user "+54V"
+		(at -9.5 -7 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "1b560f5c-7299-49b1-8043-7b962cbaf57a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "GND"
+		(at 5.5 -7 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "3526f65c-b5de-4bed-bae0-9cfc29fdfdb9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "cd453bd1-a4bb-4dc0-9fcf-0a8402307180")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 7 -4.5)
+		(size 4 4)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "fc2fbe76-1214-4f62-8147-f3916dafd319")
+	)
+	(pad "2" thru_hole circle
+		(at -7 -4.5)
+		(size 4 4)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "fbdea876-c9e3-4725-bd2b-8a414661c4b4")
+	)
+	(embedded_fonts no)
+)

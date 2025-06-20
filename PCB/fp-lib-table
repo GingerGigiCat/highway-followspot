@@ -1,0 +1,7 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "custom footprints and stuff")(type "KiCad")(uri "${KIPRJMOD}/custom footprints and stuff.pretty")(options "")(descr ""))
+  (lib (name "Seeed Studio XIAO Series Library")(type "KiCad")(uri "${KIPRJMOD}/OPL_Kicad_Library-master/Seeed Studio XIAO Series Library")(options "")(descr ""))
+  (lib (name "MAX6675")(type "KiCad")(uri "${KIPRJMOD}/MAX6675")(options "")(descr ""))
+  (lib (name "SMU02L_12")(type "KiCad")(uri "${KIPRJMOD}/SMU02L_12")(options "")(descr ""))
+)
