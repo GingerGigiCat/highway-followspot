@@ -358,3 +358,17 @@ I just found that LCSC does iec power input things that not only have a spot for
 I also added to the spreadsheet
 
 ![image](https://github.com/user-attachments/assets/95c2779f-a732-4a9b-bfea-2cc7f187d6e9)
+
+
+# Saturday 14 June - 1 hour
+
+I assigned 3d models to almost all the parts in my PCB, except the 5v to 12v converter which i unfortunately couldn't find online. Here's pictures! Oh yeah, i discovered kicad has an option to enable ray tracing which is entertaining to watch  my laptop struggle with
+
+![image](https://github.com/user-attachments/assets/4b7081e6-78dd-4417-a6ef-4139a1d6e4a4)
+
+![image](https://github.com/user-attachments/assets/5dbba933-6428-41af-94d7-db1db7742e56)
+
+I also gave the board edge cuts, with rounded corners (yummy), as well as mounting holes, and a cut out to give room for the power plug.
+I then imported it to onshape, although for some reason it decided to lose the colours of the components :/
+
+![image](https://github.com/user-attachments/assets/65f9a6ad-cf7e-4bd0-ad6b-0f7aa82a8a32)
