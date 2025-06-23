@@ -15,7 +15,7 @@
 					(font
 						(size 1.27 1.27)
 					)
-				)Update JOURNAL.md
+				)
 			)
 			(property "Value" "IEC_60320_C14_Receptacle"
 				(at 0 -9.144 0)
@@ -30,7 +30,7 @@
 				(effects
 					(font
 						(size 1.27 1.27)
-					)Update JOURNAL.md
+					)
 					(hide yes)
 				)
 			)
