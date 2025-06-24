@@ -1,4 +1,4 @@
-## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 + 0.5 + 0.25 + 1.25 + 4 + 0.5 = 34.5 hours
+## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 + 0.5 + 0.25 + 1.25 + 4 + 0.5 + 1 + 1.5 = 37 hours
 
 # Saturday 17 May 2025 - 19:00 - 3 hours
 
@@ -372,3 +372,53 @@ I also gave the board edge cuts, with rounded corners (yummy), as well as mounti
 I then imported it to onshape, although for some reason it decided to lose the colours of the components :/
 
 ![image](https://github.com/user-attachments/assets/65f9a6ad-cf7e-4bd0-ad6b-0f7aa82a8a32)
+
+
+# Monday 23 June - 1.5 hours
+
+After importing the pcb to onshape and positioning it, i realised it's a bit big, so i've been working on getting it smaller in kicad. I decided to remove the traces connecting the led driver to the led, instead it will just be freewired, it's literally just two wires.
+
+![image](https://github.com/user-attachments/assets/733de100-ce07-4819-8af1-2b9bbd6369ac)
+
+Size comparison, old in back new in front:
+![image](https://github.com/user-attachments/assets/3fde698f-7376-4f2b-86fe-4eab7a70f1c3)
+
+
+My LED driver still isn't back in stock, the website stock checker says shipment is due 13/06/2025 - We are actively pursuing delivery information with the supplier and will update our website as soon as possible. It's been like that for over a week so i'm emailing digikey support.
+
+here's the email:
+
+
+> Hello,
+> 
+> I've been waiting for the shipment of the Mean Well LED driver ELG-150-54B to arrive at digikey so I can order one for a somewhat time-sensitive project. The shipment was due on 13/06/2025 but 10 days later it is still not in stock.
+> 
+> Since it was due, the lead time checker on the website has said "We are actively pursuing delivery information with the supplier and will update our website as soon as possible."  so I was wondering if you have any updates on this shipment that you could share, or a good alternative? The HLG series seems to only dim to 10% and I'd rather not have to also use a relay as I am using all pins on my microcontroller already.
+> 
+> Thanks in advance,
+
+They responded basically saying that the HLG-150-54B is the closest alternative. It's more expensive and doesn't dim to 0% so i won't be using it, and they probably didn't really read my email.
+
+# Tuesday 24 June - 1 hour
+
+I found a new LED driver!!!!!!!!
+It's the [XLG-150-H-AB](https://www.digikey.co.uk/en/products/detail/mean-well-usa-inc/XLG-150-H-AB/10222586)!!! and it's cheaper! at £31.20 (incl. VAT) compared to the ELG one which is £37.94 (incl. VAT) so i save some money yippee
+
+Apparently it should work, and it's smaller!!!
+
+I realised the fan would be a smidge over 2W, which is the limit for my 5v-12v converter, so perhaps i will have to use a resistor
+
+It does have an earth wire though so i will have to connect the earth to the plug input's earth, which is kind of nice because it felt a little weird having an earthed plug but no actual earthing in the light.
+
+I have been considering how i'm going to have the heatsink. 
+Here's a drawing (terrible, i know)
+
+![image](https://github.com/user-attachments/assets/df2ca6f1-2799-4790-bd92-7accd37ee472)
+
+Basically, I'll have a cutout below the heatsink so it can exhaust the hot air, without just exhausting all the heat from the led inside the light. The fan will also extract ambient heat from the electronics too!
+
+That heatsink is £20 on facebook marketplace, hopefully it's still in stock by the time i actually buy it.
+
+I realised it's kind of impossible to solder to a heat pipe because uhh it moves heat? so instead i'll have to use thermal epoxy WHY IS THERMAL EPOXY SO EXPENSIVE WHAT
+
+ok i found ec360 thermal glue for £6 on amazon it's not that bad
