@@ -107,7 +107,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 4.572 -1.016 0)
+			(at 0 -0.762 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -152,7 +152,7 @@
 		(symbol "Meanwell_PSU_1_0_1"
 			(rectangle
 				(start -3.81 -2.54)
-				(end 12.7 -11.43)
+				(end 3.81 -11.43)
 				(stroke
 					(width 0)
 					(type default)
@@ -173,7 +173,7 @@
 						)
 					)
 				)
-				(number "3"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -191,7 +191,7 @@
 						)
 					)
 				)
-				(number "4"
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -199,8 +199,72 @@
 					)
 				)
 			)
-			(pin output line
-				(at 15.24 -5.08 180)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Meanwell_PSU_1_1"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 1.778 -0.762 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Meanwell_PSU_1_1_0_1"
+			(rectangle
+				(start -1.27 -2.54)
+				(end 5.08 -11.43)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Meanwell_PSU_1_1_1_1"
+			(pin input line
+				(at 7.62 -5.08 180)
 				(length 2.54)
 				(name "Vo+"
 					(effects
@@ -217,8 +281,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at 15.24 -8.89 180)
+			(pin input line
+				(at 7.62 -8.89 180)
 				(length 2.54)
 				(name "Vo-"
 					(effects

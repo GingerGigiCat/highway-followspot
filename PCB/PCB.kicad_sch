@@ -4447,23 +4447,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U6"
-				(at 4.445 1.27 0)
+			(property "Reference" "U"
+				(at 0 -0.762 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Meanwell ELG-150-54B Other side"
-				(at 4.445 -1.27 0)
+			(property "Value" ""
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "custom footprints and stuff:Meanwell ELG-150-54B Other Side"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -4493,7 +4493,7 @@
 			(symbol "Meanwell_PSU_1_0_1"
 				(rectangle
 					(start -3.81 -2.54)
-					(end 12.7 -11.43)
+					(end 3.81 -11.43)
 					(stroke
 						(width 0)
 						(type default)
@@ -4514,7 +4514,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4532,7 +4532,7 @@
 							)
 						)
 					)
-					(number "4"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4540,8 +4540,72 @@
 						)
 					)
 				)
-				(pin output line
-					(at 15.24 -5.08 180)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "specialbits:Meanwell_PSU_1_1"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 1.778 -0.762 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Meanwell_PSU_1_1_0_1"
+				(rectangle
+					(start -1.27 -2.54)
+					(end 5.08 -11.43)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Meanwell_PSU_1_1_1_1"
+				(pin input line
+					(at 7.62 -5.08 180)
 					(length 2.54)
 					(name "Vo+"
 						(effects
@@ -4558,8 +4622,8 @@
 						)
 					)
 				)
-				(pin output line
-					(at 15.24 -8.89 180)
+				(pin input line
+					(at 7.62 -8.89 180)
 					(length 2.54)
 					(name "Vo-"
 						(effects
@@ -4589,6 +4653,16 @@
 			)
 		)
 		(uuid "08bc196f-5541-4f6c-9a37-a66600b6fa06")
+	)
+	(text "(freewired)"
+		(exclude_from_sim no)
+		(at 69.342 112.014 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b96598dc-2da6-4a8f-94ad-e55643b22663")
 	)
 	(text "Fused input receptacle"
 		(exclude_from_sim no)
@@ -5588,7 +5662,7 @@
 				)
 			)
 		)
-		(property "Value" "Meanwell ELG-150-54B Other side"
+		(property "Value" "Meanwell ELG-150-54B dim pins"
 			(at 55.245 101.6 0)
 			(effects
 				(font
@@ -5623,17 +5697,11 @@
 				(hide yes)
 			)
 		)
-		(pin "3"
-			(uuid "343c079a-3a06-4083-9ce9-6e9f15886547")
-		)
 		(pin "1"
 			(uuid "1dfa2759-f4cb-4067-942c-0b0f081e96a1")
 		)
 		(pin "2"
 			(uuid "5fa966d1-8895-498a-bd94-6e961eb505f9")
-		)
-		(pin "4"
-			(uuid "9df4d61e-3e18-4984-8b4e-2434eb747f4e")
 		)
 		(instances
 			(project ""
@@ -7359,7 +7427,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8eac0de1-df64-4146-b5ae-da1d41b6dcf0")
@@ -8318,6 +8386,74 @@
 			(project ""
 				(path "/cb8a0eb9-023d-474b-952c-ea4eac5ee9fe"
 					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "specialbits:Meanwell_PSU_1_1")
+		(at 58.42 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e26c7c99-6c1c-4a95-9674-20c5b2f48c98")
+		(property "Reference" "U7"
+			(at 60.325 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 60.325 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 58.42 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 58.42 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a01ac2dc-99fe-4148-b49d-60eda914a15d")
+		)
+		(pin "1"
+			(uuid "4cad4c77-1d0f-4958-9c5d-03fb166b02ed")
+		)
+		(instances
+			(project ""
+				(path "/cb8a0eb9-023d-474b-952c-ea4eac5ee9fe"
+					(reference "U7")
 					(unit 1)
 				)
 			)

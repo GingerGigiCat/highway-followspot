@@ -14,6 +14,7 @@ const int store1_pin = 8;
 const int store2_pin = 9;
 const int store3_pin = 10;
 const int store4_pin = 11;
+const int warning_light_pin = 7;
 
 float store1;
 float store2;
@@ -21,8 +22,8 @@ float store3;
 float store4;
 
 bool do_movement_limits = true;
-int upper_movement_limit = 160;
-int lower_movement_limit = 35;
+int upper_movement_limit = 170;
+int lower_movement_limit = 10;
 
 float read_analogue_input_avg(int delay_time=5, int readings=50) {
   float avg_read;
@@ -57,6 +58,7 @@ void setup() {
   pinMode(store3_pin, INPUT_PULLDOWN);
   pinMode(store4_pin, INPUT_PULLDOWN);
   pinMode(servo_feedback_pin, INPUT_PULLDOWN);
+  pinMode(warning_light_pin, OUTPUT);
 
 
   theservo.write(59);
@@ -124,20 +126,23 @@ void loop() {
 
   if (do_movement_limits) {
     if ((angle <= lower_movement_limit || angle >= upper_movement_limit) && !theservo.attached()) {
-        Serial.println("hey!");
+        theservo.write(angle);
         theservo.attach(servo_pin);
+        digitalWrite(warning_light_pin, HIGH);
+        Serial.println("hey!");
       }
 
     if (angle <= lower_movement_limit+10) {
-      theservo.write(angle + 5);
+      theservo.write(angle + 2);
     }
     else if (angle >= upper_movement_limit-10) {
       theservo.write(angle - 5);
     }
 
-    if ((lower_movement_limit+10 <= angle) && (angle <= upper_movement_limit-5) && theservo.attached()) {
+    if ((lower_movement_limit+2 <= angle) && (angle <= upper_movement_limit-5) && theservo.attached()) {
       theservo.write(angle);
       theservo.detach();
+      digitalWrite(warning_light_pin, LOW);
       Serial.println("yay");
     }
   }
@@ -197,8 +202,8 @@ void loop() {
   }
 
 
-  Serial.print(reading);
-  Serial.print(" = ");
+  //Serial.print(reading);
+  //Serial.print(" = ");
   Serial.print(angle);
   Serial.println("º");
 }
