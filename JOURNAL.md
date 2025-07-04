@@ -1,4 +1,4 @@
-## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 + 0.5 + 0.25 + 1.25 + 4 + 0.5 + 1 + 1.5 = 37 hours
+## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 + 0.5 + 0.25 + 1.25 + 4 + 0.5 + 1 + 1.5 + 1 = 38 hours
 
 # Saturday 17 May 2025 - 19:00 - 3 hours
 
@@ -399,6 +399,7 @@ here's the email:
 
 They responded basically saying that the HLG-150-54B is the closest alternative. It's more expensive and doesn't dim to 0% so i won't be using it, and they probably didn't really read my email.
 
+
 # Tuesday 24 June - 1 hour
 
 I found a new LED driver!!!!!!!!
@@ -422,3 +423,16 @@ That heatsink is £20 on facebook marketplace, hopefully it's still in stock by 
 I realised it's kind of impossible to solder to a heat pipe because uhh it moves heat? so instead i'll have to use thermal epoxy WHY IS THERMAL EPOXY SO EXPENSIVE WHAT
 
 ok i found ec360 thermal glue for £6 on amazon it's not that bad
+
+
+# Friday 4 July - 1 hour
+
+I moved the microcontroller so it's more central on the board and further contemplated by heatsink choice. After consulting my friend ([Max W](https://github.com/max-worboys)), he found the cooler master 212 evo on facebook marketplace for £10, which is half the price of the low profile cooler i was looking at before. Yes, it's not low profile, but i don't think that matters all that much if it gives me more cooling headroom, is cheaper, and is more easy for other people to find (it's around £15 on ebay and pretty common, so others will be able to reproduce my project).
+
+![image](https://github.com/user-attachments/assets/8e8a02ce-75d3-4c45-8b5e-3fc13bcd9a90)
+
+aaaand, as the fan on the hyper 212 evo is 2.26W (over the 2w rating of my 5v-12v boost converter), i have (with much pain) found the [SPU03L-12](https://www.digikey.co.uk/en/products/detail/mean-well-usa-inc/SPU03L-12/7707058?s=N4IgTCBcDaIM4AcCuAGAzAGQLQEYIF0BfIA) which is £4.51 on digikey and is not available on LCSC, so it's more than the £3.54 i was paying for the 2w converter but this one actually provides enough power so i think it's worth it, and the cheaper cooler offsets the cost.
+
+i really need a good good proper think about how i'm mounting and orienting the cooler. Now that i've proerly decided on a specific cooler, i can start doing it without fear of it changing because that just is the cooler i'm getting no matter what. 
+
+goodnight github
