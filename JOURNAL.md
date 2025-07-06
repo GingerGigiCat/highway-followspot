@@ -1,4 +1,4 @@
-## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 + 0.5 + 0.25 + 1.25 + 4 + 0.5 + 1 + 1.5 + 1 + 1 = 39 hours
+## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 + 0.5 + 0.25 + 1.25 + 4 + 0.5 + 1 + 1.5 + 1 + 1 = 41 hours
 
 # Saturday 17 May 2025 - 19:00 - 3 hours
 
@@ -436,3 +436,26 @@ aaaand, as the fan on the hyper 212 evo is 2.26W (over the 2w rating of my 5v-12
 i really need a good good proper think about how i'm mounting and orienting the cooler. Now that i've proerly decided on a specific cooler, i can start doing it without fear of it changing because that just is the cooler i'm getting no matter what. 
 
 goodnight github
+
+
+# Saturdat 5 July - 0.5 hours
+
+I replaced the old voltage converter on the schematic and pcb, and i have found a 3d model of the heatsink and imported it to onshape!
+
+ALSO, i managed to find a thermocouple on LCSC!!!! for $4.56 !!!!!!!!!!!!!!!!!!!! that's a lot less than the thermocouple i had before ($7.54 less!), although it doesn't have much data available about it. It is the [ETA-G-K-24-200cm](https://lcsc.com/product-detail/Electronic-testing-accessories_ETA-ETA-G-K-24-200cm_C5144202.html?s_z=n_ETA-G-K-24) which is 200cm but i can just coil it up inside [(manufacturer website)](https://en.tw-eta.com/index.php?c=show&id=320)
+
+
+# Sunday 6 July - 2 hours
+
+I positioned the parts how i think they will fit nicely, and i imported a model of the led driver. There was no model available for the power input part, so i modelled the important aspects in onshape which took way too long, and i made a raised bit that comes out of the light for the part to sit on so that the prongs aren't at risk of touching the heatsink (bad). and it's looking pretty good! oh also i think i have finalised my parts list. Also, I added a fan to the model.
+
+![image](https://github.com/user-attachments/assets/93231a9c-7bf8-4114-afdd-57216663cf55)
+
+(ignore the wires sticking out, those are from the led driver and i haven't done anything about them yet)
+
+![image](https://github.com/user-attachments/assets/576e5c32-807c-4bb0-b832-f1b38fa85b28)
+
+![image](https://github.com/user-attachments/assets/74cf4585-1735-4de4-a9ef-89199c190437)
+
+(yes i realise that fan needs to be the other way around, that's a future me task)
+
