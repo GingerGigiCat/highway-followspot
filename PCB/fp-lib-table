@@ -4,4 +4,5 @@
   (lib (name "Seeed Studio XIAO Series Library")(type "KiCad")(uri "${KIPRJMOD}/OPL_Kicad_Library-master/Seeed Studio XIAO Series Library")(options "")(descr ""))
   (lib (name "MAX6675")(type "KiCad")(uri "${KIPRJMOD}/MAX6675")(options "")(descr ""))
   (lib (name "SMU02L_12")(type "KiCad")(uri "${KIPRJMOD}/SMU02L_12")(options "")(descr ""))
+  (lib (name "SPU03L-12")(type "KiCad")(uri "${KIPRJMOD}/SPU03L-12/footprints.pretty")(options "")(descr ""))
 )

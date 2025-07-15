@@ -2650,46 +2650,45 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "SMU02L-12:SMU02L-12"
+		(symbol "SPU03L-12:SPU03L-12"
 			(pin_names
-				(offset 1.016)
+				(offset 0.254)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at -10.379 5.4822 0)
+				(at 20.32 10.16 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.524 1.524)
 					)
-					(justify left bottom)
 				)
 			)
-			(property "Value" "SMU02L-12"
-				(at -9.0225 -7.4267 0)
+			(property "Value" "SPU03L-12"
+				(at 20.32 7.62 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.524 1.524)
 					)
-					(justify left bottom)
 				)
 			)
-			(property "Footprint" "SMU02L-12:SIP750W50P254L1160H1014Q4"
+			(property "Footprint" "SPU03L-05_MWU"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
+						(italic yes)
 					)
-					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "SPU03L-05"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
+						(italic yes)
 					)
 					(hide yes)
 				)
@@ -2703,166 +2702,149 @@
 					(hide yes)
 				)
 			)
-			(property "MF" "Mean Well"
+			(property "ki_locked" ""
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
-					(hide yes)
 				)
 			)
-			(property "Mouser-Purchase-URL" "https://snapeda.com/shop?store=Mouser&id=2765143"
+			(property "ki_keywords" "SPU03L-05"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "Description_1" "Isolated Module DC DC Converter 1 Output 5V 400mA 4.5V - 5.5V Input"
+			(property "ki_fp_filters" "SPU03L-05_MWU"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "Package" "SIP-4 Mean Well"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
+			(symbol "SPU03L-12_0_1"
+				(polyline
+					(pts
+						(xy 7.62 5.08) (xy 7.62 -7.62)
 					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Price" "None"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MP" "SMU02L-12"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "DigiKey-Purchase-URL" "https://snapeda.com/shop?store=DigiKey&id=2765143"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Availability" "Unavailable"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(symbol "SMU02L-12_0_0"
-				(rectangle
-					(start -10.16 -5.08)
-					(end 10.16 5.08)
 					(stroke
-						(width 0.4064)
+						(width 0.127)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
-				(pin input line
-					(at -15.24 2.54 0)
-					(length 5.08)
-					(name "-VIN"
+				(polyline
+					(pts
+						(xy 7.62 -7.62) (xy 33.02 -7.62)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 33.02 5.08) (xy 7.62 5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 33.02 -7.62) (xy 33.02 5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at 0 0 0)
+					(length 7.62)
+					(name "VIN+"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "1"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 				)
-				(pin input line
-					(at -15.24 -2.54 0)
-					(length 5.08)
-					(name "+VIN"
+				(pin unspecified line
+					(at 0 -2.54 0)
+					(length 7.62)
+					(name "VIN-"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "2"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 				)
-				(pin output line
-					(at 15.24 2.54 180)
-					(length 5.08)
-					(name "-VOUT"
+				(pin unspecified line
+					(at 40.64 0 180)
+					(length 7.62)
+					(name "VOUT+"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "7"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 				)
-				(pin output line
-					(at 15.24 -2.54 180)
-					(length 5.08)
-					(name "+VOUT"
+				(pin unspecified line
+					(at 40.64 -2.54 180)
+					(length 7.62)
+					(name "VOUT-"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "4"
+					(number "5"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -5126,16 +5108,6 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 41.91) (xy 148.59 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "77d103b7-187d-40d5-ad81-e39c64b1f7d3")
-	)
-	(wire
-		(pts
 			(xy 140.97 142.24) (xy 172.72 142.24)
 		)
 		(stroke
@@ -5193,6 +5165,16 @@
 			(type default)
 		)
 		(uuid "91951c2a-5dd2-4468-be8f-de226fb8d794")
+	)
+	(wire
+		(pts
+			(xy 148.59 41.91) (xy 148.59 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9317cf18-d91b-4d91-ac3a-1b99e80db865")
 	)
 	(wire
 		(pts
@@ -5593,7 +5575,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "42Ω  0.12W"
+		(property "Value" "80-100Ω"
 			(at 93.98 116.8399 0)
 			(effects
 				(font
@@ -5772,6 +5754,82 @@
 			(project ""
 				(path "/cb8a0eb9-023d-474b-952c-ea4eac5ee9fe"
 					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SPU03L-12:SPU03L-12")
+		(at 107.95 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0d2947fa-3b18-4f0e-8a0e-6e10bd8e04a4")
+		(property "Reference" "U8"
+			(at 128.27 36.83 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "SPU03L-12"
+			(at 128.27 39.37 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "SPU03L-12:SPU03L-12_MWU"
+			(at 107.95 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "SPU03L-05"
+			(at 107.95 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 107.95 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "255686c6-24dd-438e-a28c-47ff88d14b2c")
+		)
+		(pin "1"
+			(uuid "e81720e6-0d71-4045-ad06-aef256516eb5")
+		)
+		(pin "5"
+			(uuid "54f31f6e-22dc-40bc-b996-3b997d9d7903")
+		)
+		(pin "7"
+			(uuid "2b8384d2-fbaa-42b3-af65-c8c469d58ccc")
+		)
+		(instances
+			(project ""
+				(path "/cb8a0eb9-023d-474b-952c-ea4eac5ee9fe"
+					(reference "U8")
 					(unit 1)
 				)
 			)
@@ -6328,16 +6386,15 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 118.11 49.53 90)
+		(at 107.95 46.99 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3179e51c-ac03-457d-a868-8650c853cbed")
 		(property "Reference" "#PWR09"
-			(at 121.92 49.53 0)
+			(at 111.76 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6346,7 +6403,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 113.03 49.53 0)
+			(at 102.87 46.228 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6354,7 +6411,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 118.11 49.53 0)
+			(at 107.95 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6363,7 +6420,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 118.11 49.53 0)
+			(at 107.95 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6372,7 +6429,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 118.11 49.53 0)
+			(at 107.95 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6460,16 +6517,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 118.11 44.45 270)
+		(at 107.95 49.53 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "33642302-9937-47f9-b416-f70411cd0d0c")
 		(property "Reference" "#PWR08"
-			(at 111.76 44.45 0)
+			(at 101.6 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6478,7 +6534,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 113.03 44.45 0)
+			(at 102.87 51.308 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6486,7 +6542,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 118.11 44.45 0)
+			(at 107.95 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6495,7 +6551,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 118.11 44.45 0)
+			(at 107.95 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6504,7 +6560,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 118.11 44.45 0)
+			(at 107.95 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7085,7 +7141,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Fan_4pin")
-		(at 165.1 46.99 180)
+		(at 165.1 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7094,7 +7150,7 @@
 		(fields_autoplaced yes)
 		(uuid "620a8ca7-a16c-4eec-95d2-bf07e3e40112")
 		(property "Reference" "M1"
-			(at 160.02 48.2601 0)
+			(at 170.18 48.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7103,7 +7159,7 @@
 			)
 		)
 		(property "Value" "Fan_4pin"
-			(at 160.02 45.7201 0)
+			(at 170.18 50.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7112,7 +7168,7 @@
 			)
 		)
 		(property "Footprint" "Connector:FanPinHeader_1x04_P2.54mm_Vertical"
-			(at 165.1 47.244 0)
+			(at 165.1 49.276 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7121,7 +7177,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf"
-			(at 165.1 47.244 0)
+			(at 165.1 49.276 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7130,7 +7186,7 @@
 			)
 		)
 		(property "Description" "Fan, tacho output, PWM input, 4-pin connector"
-			(at 165.1 46.99 0)
+			(at 165.1 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8062,161 +8118,6 @@
 			(project ""
 				(path "/cb8a0eb9-023d-474b-952c-ea4eac5ee9fe"
 					(reference "U4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "SMU02L-12:SMU02L-12")
-		(at 133.35 46.99 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cbf6ed79-ea6f-472b-a614-541b28f599ae")
-		(property "Reference" "U5"
-			(at 133.35 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SMU02L-12"
-			(at 133.35 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "SMU02L_12:SIP750W50P254L1160H1014Q4"
-			(at 133.35 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 133.35 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 133.35 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "Mean Well"
-			(at 133.35 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Mouser-Purchase-URL" "https://snapeda.com/shop?store=Mouser&id=2765143"
-			(at 133.35 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "Isolated Module DC DC Converter 1 Output 5V 400mA 4.5V - 5.5V Input"
-			(at 133.35 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "SIP-4 Mean Well"
-			(at 133.35 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 133.35 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "SMU02L-12"
-			(at 133.35 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "DigiKey-Purchase-URL" "https://snapeda.com/shop?store=DigiKey&id=2765143"
-			(at 133.35 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "Unavailable"
-			(at 133.35 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "833b2ad8-a71f-4016-874b-b197ffee372e")
-		)
-		(pin "3"
-			(uuid "36312ac2-8499-48a5-8834-16f183acb7de")
-		)
-		(pin "1"
-			(uuid "f6d0da09-9fdb-4262-b0f7-a61a9bd37b13")
-		)
-		(pin "2"
-			(uuid "2634ca76-ed86-4f38-8419-cb14b94e47f9")
-		)
-		(instances
-			(project ""
-				(path "/cb8a0eb9-023d-474b-952c-ea4eac5ee9fe"
-					(reference "U5")
 					(unit 1)
 				)
 			)
