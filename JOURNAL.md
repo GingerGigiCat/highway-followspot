@@ -1,4 +1,4 @@
-## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 + 0.5 + 0.25 + 1.25 + 4 + 0.5 + 1 + 1.5 + 1 + 1 = 41 hours
+## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 + 0.5 + 0.25 + 1.25 + 4 + 0.5 + 1 + 1.5 + 1 + 1 + 0.5 + 2 + 4 = 47.5 hours
 
 # Saturday 17 May 2025 - 19:00 - 3 hours
 
@@ -459,3 +459,26 @@ I positioned the parts how i think they will fit nicely, and i imported a model 
 
 (yes i realise that fan needs to be the other way around, that's a future me task)
 
+
+# Friday 18 July - 4 hours
+
+SO it's been a while but i've been working on it over the past few days and i've modelled the heatpipes and i researched bending tools for heat pipes. i found a few, but the best i found was [this one](https://www.reddit.com/r/functionalprint/comments/y1ksua/pipe_bender_for_heat_pipes/). It's simple, 3d printed, and doesn't kink the heat pipe. AND, the person gave an onshape link so i could see how they modelled it! 
+
+Heat pipes:
+
+<img width="1128" height="688" alt="image" src="https://github.com/user-attachments/assets/54dbc821-c081-4621-af59-da78c76f1021" />
+
+
+I had to make 2 different benders because it wasn't possible to combine all the bends into one. And the first bender has to be in 2 separate pieces that go together, or else it would be impossible to take the heat pipe out once it has been bended :pf:
+
+Bender 1 part 1 with complete heatpipe for reference
+<img width="1467" height="965" alt="image" src="https://github.com/user-attachments/assets/578e0cc3-7e21-4c13-9504-e71b16c00c90" />
+
+Bender 1 part 2
+<img width="1195" height="632" alt="image" src="https://github.com/user-attachments/assets/deeeb2d3-2486-45d1-930d-052a4853d1c3" />
+
+Bender 1 together with complete heatpipe for reference
+<img width="1461" height="781" alt="image" src="https://github.com/user-attachments/assets/56c0bfba-8d5f-4249-8fe6-4d28e21c6716" />
+
+Bender 2 with complete heatpipe
+<img width="1340" height="1001" alt="image" src="https://github.com/user-attachments/assets/4bb70108-f90f-42e5-af0e-c72a221266c8" />
