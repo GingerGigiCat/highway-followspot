@@ -1,4 +1,4 @@
-## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 + 0.5 + 0.25 + 1.25 + 4 + 0.5 + 1 + 1.5 + 1 + 1 + 0.5 + 2 + 4 = 47.5 hours
+## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 + 0.5 + 0.25 + 1.25 + 4 + 0.5 + 1 + 1.5 + 1 + 1 + 0.5 + 2 + 4 + 1.5 = 49 hours
 
 # Saturday 17 May 2025 - 19:00 - 3 hours
 
@@ -482,3 +482,21 @@ Bender 1 together with complete heatpipe for reference
 
 Bender 2 with complete heatpipe
 <img width="1340" height="1001" alt="image" src="https://github.com/user-attachments/assets/4bb70108-f90f-42e5-af0e-c72a221266c8" />
+
+# Sundary 20 July - 1.5 hours
+
+guten abend
+
+I have made the top of the electronics box separate from the main thing, AND i decided how i'm going to be mounting things!
+
+So i'm going to be using m4 screws with nuts, it's easier than threaded inserts and both the IEC power input and the led driver and now my PCB have 4.5mm holes for m4 screws.
+
+I have made holes for:
+
+- the led driver!
+- the electronics box roof!
+- the power input!
+
+It looks like this:
+
+<img width="1298" height="856" alt="image" src="https://github.com/user-attachments/assets/d1113317-9a9d-475b-8fbb-45ede80ab92a" />
