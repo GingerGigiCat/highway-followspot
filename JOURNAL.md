@@ -500,3 +500,22 @@ I have made holes for:
 It looks like this:
 
 <img width="1298" height="856" alt="image" src="https://github.com/user-attachments/assets/d1113317-9a9d-475b-8fbb-45ede80ab92a" />
+
+
+# Monday 21 July - 2 hours
+
+I have sort of hollowed out the back of the light tube, it used to look like the first picture but now looks like the second! I also added an extra bit that sticks out slightly to give some room for the LED driver wires, and i continued adding screw holes and nut holes around
+
+Hollowing out the back was shockingly difficult, i tried offsetting the faces and thickning them as a cut, but it would just go wonky so i ended up having to manually make a plane in exactly the right place and draw a little triangle which i cut out of the body for each side :pf: it's hard to explain
+
+I'm just about to add extra screw holes at the top where the front and back attach but i'm going to sleep
+
+I'm feeling like it's close to finished, although i still do need to figure out a mount for the heatsink and make a back plate the pcb attaches to, but that shouldn't be too hard right? right?????
+
+<img width="1242" height="877" alt="image" src="https://github.com/user-attachments/assets/3c7713dc-4a25-4c45-9349-3aeb8beddc35" />
+
+<img width="1334" height="853" alt="image" src="https://github.com/user-attachments/assets/35395737-d9b7-4d36-90b0-5ba2a1e0be56" />
+
+
+<img width="1208" height="571" alt="image" src="https://github.com/user-attachments/assets/a975a986-c55b-4814-98a9-ef16af8ac605" />
+
