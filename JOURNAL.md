@@ -1,4 +1,4 @@
-## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 + 0.5 + 0.25 + 1.25 + 4 + 0.5 + 1 + 1.5 + 1 + 1 + 0.5 + 2 + 4 + 1.5 + 2 = 51 hours
+## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 + 0.5 + 0.25 + 1.25 + 4 + 0.5 + 1 + 1.5 + 1 + 1 + 0.5 + 2 + 4 + 1.5 + 2 + 2.5 = 53.5 hours
 
 # Saturday 17 May 2025 - 19:00 - 3 hours
 
@@ -519,3 +519,29 @@ I'm feeling like it's close to finished, although i still do need to figure out 
 
 <img width="1208" height="571" alt="image" src="https://github.com/user-attachments/assets/a975a986-c55b-4814-98a9-ef16af8ac605" />
 
+
+# Tuesday 22 July - 2.5 hours
+
+I've done the top of the attachment between the front and back!
+
+<img width="1218" height="489" alt="image" src="https://github.com/user-attachments/assets/62f1a4e1-41dd-4e92-99ce-7b1387fa2e1a" />
+
+Next up: heatsink mounting
+
+I've just been seeing how PLA handles being pushed against my cpu heatsink when i'm running a stress test (CPU at 150-180W) and it was absolutely fine, didn't go melty at all, so PETG should be great to hold the heatsink without needing a buffer material (MDF)
+
+Snazzy hole:
+
+<img width="1406" height="945" alt="image" src="https://github.com/user-attachments/assets/b12e9db0-2717-422f-bbb8-c6c238135a1b" />
+
+I really really hope this model of the cooler is accurate
+
+I just finished making 2 mounting brackets to (hopefully) hold the cooler in place, they should fit inbetween the fan and heatsink, maybe they'll be noisy but oh well. I also made the base of the box nicely fit to the heatsink!
+
+<img width="812" height="508" alt="image" src="https://github.com/user-attachments/assets/7c897b33-edf0-4176-83eb-a424f054fc08" />
+
+My dad just reminded me i need a mount for the light... I think i'll do that now. I'm thinking M10 bolts? (I'll need to check dimensions once i've bought the bolts and before printing)
+
+Hey look it's a mount nub! I also put 2 little tabs on one of the sides that can be folded over the bolt because otherwise it could fall in
+
+<img width="989" height="903" alt="image" src="https://github.com/user-attachments/assets/e4f87aba-ec28-4e7a-96b6-04f82194695c" />
