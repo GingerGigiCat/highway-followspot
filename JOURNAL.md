@@ -1,4 +1,4 @@
-## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 + 0.5 + 0.25 + 1.25 + 4 + 0.5 + 1 + 1.5 + 1 + 1 + 0.5 + 2 + 4 + 1.5 + 2 + 2.5 = 53.5 hours
+## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 + 0.5 + 0.25 + 1.25 + 4 + 0.5 + 1 + 1.5 + 1 + 1 + 0.5 + 2 + 4 + 1.5 + 2 + 2.5 + 4 = 57.5 hours
 
 # Saturday 17 May 2025 - 19:00 - 3 hours
 
@@ -545,3 +545,30 @@ My dad just reminded me i need a mount for the light... I think i'll do that now
 Hey look it's a mount nub! I also put 2 little tabs on one of the sides that can be folded over the bolt because otherwise it could fall in
 
 <img width="989" height="903" alt="image" src="https://github.com/user-attachments/assets/e4f87aba-ec28-4e7a-96b6-04f82194695c" />
+
+
+# Wednesday 23 July - 4 hours
+
+I've made a nice back panel, added a silkscreen warning symbol to the part of the PCB where AC is, made a cutout to plug in a usb c cable, changed the nubs for the legs slightly, and added more fan intake holes on the front tube.
+
+<img width="1259" height="1099" alt="image" src="https://github.com/user-attachments/assets/ae09a6e8-241d-4e21-865c-2fe12c646192" />
+
+I'm thinking i'll cut the legs out of plywood, i don't think 3d printed legs would be great to hold the whole lamp with.
+
+I just made a handle to move the front tube. 
+I suddenly thought i could use one of the buttons on the back, or a key combo, to switch the fader from changing the led brightness to moving the lens, i think that would be fun.
+
+<img width="1108" height="865" alt="image" src="https://github.com/user-attachments/assets/2032b58c-28ae-4539-9d9d-5674c1a8f3c3" />
+
+Oh did I mention that when i did my school desk lamp project it had a really not great way of mounting the bolts to the body, it was just a superglued on thing that went over the bolt to attach it to the body, very bad and i doubt it would hold for such a bigger scale version.
+
+LEGS!
+
+<img width="1233" height="937" alt="image" src="https://github.com/user-attachments/assets/30163222-e35b-4330-ac7c-19da33e9b640" />
+
+KNOB!!
+
+<img width="1298" height="952" alt="image" src="https://github.com/user-attachments/assets/b3404ada-30ad-427e-b2a5-75fa3c81b2d1" />
+
+
+wow what a productive day
