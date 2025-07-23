@@ -570,5 +570,7 @@ KNOB!!
 
 <img width="1298" height="952" alt="image" src="https://github.com/user-attachments/assets/b3404ada-30ad-427e-b2a5-75fa3c81b2d1" />
 
+<img width="1191" height="923" alt="image" src="https://github.com/user-attachments/assets/42a17303-9555-4523-bae9-cd9c08f32792" />
 
-wow what a productive day
+
+wow very productive day
