@@ -16,7 +16,7 @@ It has:
 
 The body is 3D printed but it could be made out of a better material if you feel like it, and the legs are plywood, and of course the lens is glass.
 
-Here's the onshape link! https://cad.onshape.com/documents/9e98bdcd2562c04de815ecc5/w/89c7868c82d5394c068b4491/e/8808e6d7c01ac629712aeab9?renderMode=0&uiState=6882b614a27d1511c88b3256
+Here's the onshape link! https://cad.onshape.com/documents/9e98bdcd2562c04de815ecc5/w/89c7868c82d5394c068b4491/e/8808e6d7c01ac629712aeab9?renderMode=0&uiState=6882b91ba27d1511c88b3310
 
 ## Why?
 
