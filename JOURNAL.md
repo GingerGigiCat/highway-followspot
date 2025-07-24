@@ -1,4 +1,4 @@
-## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 + 0.5 + 0.25 + 1.25 + 4 + 0.5 + 1 + 1.5 + 1 + 1 = 41 hours
+## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 + 0.5 + 0.25 + 1.25 + 4 + 0.5 + 1 + 1.5 + 1 + 1 + 0.5 + 2 + 4 + 1.5 + 2 + 2.5 + 4 = 57.5 hours
 
 # Saturday 17 May 2025 - 19:00 - 3 hours
 
@@ -459,3 +459,118 @@ I positioned the parts how i think they will fit nicely, and i imported a model 
 
 (yes i realise that fan needs to be the other way around, that's a future me task)
 
+
+# Friday 18 July - 4 hours
+
+SO it's been a while but i've been working on it over the past few days and i've modelled the heatpipes and i researched bending tools for heat pipes. i found a few, but the best i found was [this one](https://www.reddit.com/r/functionalprint/comments/y1ksua/pipe_bender_for_heat_pipes/). It's simple, 3d printed, and doesn't kink the heat pipe. AND, the person gave an onshape link so i could see how they modelled it! 
+
+Heat pipes:
+
+<img width="1128" height="688" alt="image" src="https://github.com/user-attachments/assets/54dbc821-c081-4621-af59-da78c76f1021" />
+
+
+I had to make 2 different benders because it wasn't possible to combine all the bends into one. And the first bender has to be in 2 separate pieces that go together, or else it would be impossible to take the heat pipe out once it has been bended :pf:
+
+Bender 1 part 1 with complete heatpipe for reference
+<img width="1467" height="965" alt="image" src="https://github.com/user-attachments/assets/578e0cc3-7e21-4c13-9504-e71b16c00c90" />
+
+Bender 1 part 2
+<img width="1195" height="632" alt="image" src="https://github.com/user-attachments/assets/deeeb2d3-2486-45d1-930d-052a4853d1c3" />
+
+Bender 1 together with complete heatpipe for reference
+<img width="1461" height="781" alt="image" src="https://github.com/user-attachments/assets/56c0bfba-8d5f-4249-8fe6-4d28e21c6716" />
+
+Bender 2 with complete heatpipe
+<img width="1340" height="1001" alt="image" src="https://github.com/user-attachments/assets/4bb70108-f90f-42e5-af0e-c72a221266c8" />
+
+# Sundary 20 July - 1.5 hours
+
+guten abend
+
+I have made the top of the electronics box separate from the main thing, AND i decided how i'm going to be mounting things!
+
+So i'm going to be using m4 screws with nuts, it's easier than threaded inserts and both the IEC power input and the led driver and now my PCB have 4.5mm holes for m4 screws.
+
+I have made holes for:
+
+- the led driver!
+- the electronics box roof!
+- the power input!
+
+It looks like this:
+
+<img width="1298" height="856" alt="image" src="https://github.com/user-attachments/assets/d1113317-9a9d-475b-8fbb-45ede80ab92a" />
+
+
+# Monday 21 July - 2 hours
+
+I have sort of hollowed out the back of the light tube, it used to look like the first picture but now looks like the second! I also added an extra bit that sticks out slightly to give some room for the LED driver wires, and i continued adding screw holes and nut holes around
+
+Hollowing out the back was shockingly difficult, i tried offsetting the faces and thickning them as a cut, but it would just go wonky so i ended up having to manually make a plane in exactly the right place and draw a little triangle which i cut out of the body for each side :pf: it's hard to explain
+
+I'm just about to add extra screw holes at the top where the front and back attach but i'm going to sleep
+
+I'm feeling like it's close to finished, although i still do need to figure out a mount for the heatsink and make a back plate the pcb attaches to, but that shouldn't be too hard right? right?????
+
+<img width="1242" height="877" alt="image" src="https://github.com/user-attachments/assets/3c7713dc-4a25-4c45-9349-3aeb8beddc35" />
+
+<img width="1334" height="853" alt="image" src="https://github.com/user-attachments/assets/35395737-d9b7-4d36-90b0-5ba2a1e0be56" />
+
+
+<img width="1208" height="571" alt="image" src="https://github.com/user-attachments/assets/a975a986-c55b-4814-98a9-ef16af8ac605" />
+
+
+# Tuesday 22 July - 2.5 hours
+
+I've done the top of the attachment between the front and back!
+
+<img width="1218" height="489" alt="image" src="https://github.com/user-attachments/assets/62f1a4e1-41dd-4e92-99ce-7b1387fa2e1a" />
+
+Next up: heatsink mounting
+
+I've just been seeing how PLA handles being pushed against my cpu heatsink when i'm running a stress test (CPU at 150-180W) and it was absolutely fine, didn't go melty at all, so PETG should be great to hold the heatsink without needing a buffer material (MDF)
+
+Snazzy hole:
+
+<img width="1406" height="945" alt="image" src="https://github.com/user-attachments/assets/b12e9db0-2717-422f-bbb8-c6c238135a1b" />
+
+I really really hope this model of the cooler is accurate
+
+I just finished making 2 mounting brackets to (hopefully) hold the cooler in place, they should fit inbetween the fan and heatsink, maybe they'll be noisy but oh well. I also made the base of the box nicely fit to the heatsink!
+
+<img width="812" height="508" alt="image" src="https://github.com/user-attachments/assets/7c897b33-edf0-4176-83eb-a424f054fc08" />
+
+My dad just reminded me i need a mount for the light... I think i'll do that now. I'm thinking M10 bolts? (I'll need to check dimensions once i've bought the bolts and before printing)
+
+Hey look it's a mount nub! I also put 2 little tabs on one of the sides that can be folded over the bolt because otherwise it could fall in
+
+<img width="989" height="903" alt="image" src="https://github.com/user-attachments/assets/e4f87aba-ec28-4e7a-96b6-04f82194695c" />
+
+
+# Wednesday 23 July - 4 hours
+
+I've made a nice back panel, added a silkscreen warning symbol to the part of the PCB where AC is, made a cutout to plug in a usb c cable, changed the nubs for the legs slightly, and added more fan intake holes on the front tube.
+
+<img width="1259" height="1099" alt="image" src="https://github.com/user-attachments/assets/ae09a6e8-241d-4e21-865c-2fe12c646192" />
+
+I'm thinking i'll cut the legs out of plywood, i don't think 3d printed legs would be great to hold the whole lamp with.
+
+I just made a handle to move the front tube. 
+I suddenly thought i could use one of the buttons on the back, or a key combo, to switch the fader from changing the led brightness to moving the lens, i think that would be fun.
+
+<img width="1108" height="865" alt="image" src="https://github.com/user-attachments/assets/2032b58c-28ae-4539-9d9d-5674c1a8f3c3" />
+
+Oh did I mention that when i did my school desk lamp project it had a really not great way of mounting the bolts to the body, it was just a superglued on thing that went over the bolt to attach it to the body, very bad and i doubt it would hold for such a bigger scale version.
+
+LEGS!
+
+<img width="1233" height="937" alt="image" src="https://github.com/user-attachments/assets/30163222-e35b-4330-ac7c-19da33e9b640" />
+
+KNOB!!
+
+<img width="1298" height="952" alt="image" src="https://github.com/user-attachments/assets/b3404ada-30ad-427e-b2a5-75fa3c81b2d1" />
+
+<img width="1191" height="923" alt="image" src="https://github.com/user-attachments/assets/42a17303-9555-4523-bae9-cd9c08f32792" />
+
+
+wow very productive day
