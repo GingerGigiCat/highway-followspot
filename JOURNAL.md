@@ -595,3 +595,12 @@ I am going to do the code tomorrow, i have no doubt it won't be perfect but it s
 I have an excel spreadsheet of my BoM, but i'm too tired right now to add it to my repo as a csv and in my readme as a table so goodnight!
 
 I am debating with myself whether or not this is a 6 or 10 point project, i guess i'll ask in one of the highway channels
+
+
+# Friday 25 July - 2 hours
+
+I did code, assigning pins to the right ones for the xiao, and i changed the pin input types from pulldown to pullup and it fixed so much quirkyness! Before i did that, touching some pins on the arduino with a finger made the servo freak out and the buttons were weird, now it's fine!! I also added the thermocouple library, but code is not yet finished. (see https://github.com/Zanduino/MAX31855/blob/master/examples/Demo/Demo.ino)
+
+i also exported everything as step files, finalised the BoM, figured out i'm going to split the cost of filament with a friend so i can get 1kg for £8.75, and made production files.
+
+oh and i added to the readme, asked acon if it's a 6 or 10 point project (they said 6 but maybe with extra points), and did some other things to get it good too.
