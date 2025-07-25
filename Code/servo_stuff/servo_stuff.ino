@@ -12,14 +12,10 @@ const int servo_feedback_pin = A0;
 const int set_pin = 13;
 const int store1_pin = 8;
 const int store2_pin = 9;
-const int store3_pin = 10;
-const int store4_pin = 11;
 const int warning_light_pin = 7;
 
 float store1;
 float store2;
-float store3;
-float store4;
 
 bool do_movement_limits = true;
 int upper_movement_limit = 170;
@@ -52,38 +48,36 @@ void setup() {
 
   theservo.attach(servo_pin);
   Serial.begin(115200);
-  pinMode(set_pin, INPUT_PULLDOWN);
-  pinMode(store1_pin, INPUT_PULLDOWN);
-  pinMode(store2_pin, INPUT_PULLDOWN);
-  pinMode(store3_pin, INPUT_PULLDOWN);
-  pinMode(store4_pin, INPUT_PULLDOWN);
-  pinMode(servo_feedback_pin, INPUT_PULLDOWN);
+  pinMode(set_pin, INPUT_PULLUP);
+  pinMode(store1_pin, INPUT_PULLUP);
+  pinMode(store2_pin, INPUT_PULLUP);
+  pinMode(servo_feedback_pin, INPUT_PULLUP);
   pinMode(warning_light_pin, OUTPUT);
 
 
   theservo.write(59);
-  delay(400);
+  delay(800);
   theservo.write(60);
-  delay(80);
+  delay(150);
   wiper_at_60 = read_analogue_input_avg(5, 200);
 
   theservo.write(121);
-  delay(300);
+  delay(800);
   theservo.write(120);
-  delay(80);
+  delay(150);
   wiper_at_120 = read_analogue_input_avg(5, 200);
 
   for (i=0; i<3; i++) {
     theservo.write(59);
-    delay(400);
+    delay(800);
     theservo.write(60);
-    delay(80);
+    delay(150);
     wiper_at_60 = (wiper_at_60 + read_analogue_input_avg(5, 150)) / 2;
 
     theservo.write(121);
-    delay(400);
+    delay(800);
     theservo.write(120);
-    delay(80);
+    delay(150);
     wiper_at_120 = (wiper_at_120 + read_analogue_input_avg(5, 150)) / 2;
   }
 
@@ -148,8 +142,9 @@ void loop() {
   }
 
 
-  if (digitalRead(store1_pin)) {
-    if (digitalRead(set_pin)) {
+  if (digitalRead(store1_pin) == 0) {
+    Serial.println("AA");
+    if (digitalRead(set_pin) == 0) {
       store1 = wiper_to_angle(read_analogue_input_avg(2, 50));
     }
     else {
@@ -157,12 +152,13 @@ void loop() {
         theservo.attach(servo_pin);
       }
       theservo.write(store1);
-      delay(200);
+      delay(300);
       theservo.detach();
     }
   }
-  if (digitalRead(store2_pin)) {
-    if (digitalRead(set_pin)) {
+  if (digitalRead(store2_pin) == 0) {
+    Serial.println("BB");
+    if (digitalRead(set_pin) == 0) {
       store2 = wiper_to_angle(read_analogue_input_avg(2, 50));
     }
     else {
@@ -170,33 +166,7 @@ void loop() {
         theservo.attach(servo_pin);
       }
       theservo.write(store2);
-      delay(200);
-      theservo.detach();
-    }
-  }
-  if (digitalRead(store3_pin)) {
-    if (digitalRead(set_pin)) {
-      store3 = wiper_to_angle(read_analogue_input_avg(2, 50));
-    }
-    else {
-      if (!theservo.attached()) {
-        theservo.attach(servo_pin);
-      }
-      theservo.write(store3);
-      delay(200);
-      theservo.detach();
-    }
-  }
-  if (digitalRead(store4_pin)) {
-    if (digitalRead(set_pin)) {
-      store4 = wiper_to_angle(read_analogue_input_avg(2, 50));
-    }
-    else {
-      if (!theservo.attached()) {
-        theservo.attach(servo_pin);
-      }
-      theservo.write(store4);
-      delay(200);
+      delay(300);
       theservo.detach();
     }
   }
