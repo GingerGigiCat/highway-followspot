@@ -2,6 +2,8 @@
 
 <img width="1252" height="1155" alt="image" src="https://github.com/user-attachments/assets/2e0c2ba4-c5c4-41d8-b474-27583e33a3b6" />
 
+A **followspot** is a type of spotlight used in theatre which is manually controlled and pointed at an actor. They normally have brightness and zoom controls, which mine has!
+
 It has:
 
 - An over 100W white LED COB chip for over 17000 lumens of light output (Max. 150W, real max depends on how much heat the led dissipates as i'll have to limit it so it can't overheat and die)
@@ -14,7 +16,7 @@ It has:
 - Automatic brightness reduction if the LED gets too hot
 - An LED on the control panel to give feedback, like if the LED is too hot or the lens is being pushed too far
 
-The body is 3D printed but it could be made out of a better material if you feel like it, and the legs are plywood, and of course the lens is glass.
+The body is 3D printed in PETG but it could be made out of a better material if you feel like it, and the legs are plywood, and of course the lens is glass.
 
 Here's the onshape link! https://cad.onshape.com/documents/9e98bdcd2562c04de815ecc5/w/89c7868c82d5394c068b4491/e/8808e6d7c01ac629712aeab9?renderMode=0&uiState=6882b91ba27d1511c88b3310
 
