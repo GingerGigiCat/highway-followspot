@@ -5,7 +5,7 @@
 It has:
 
 - An over 100W white LED COB chip for over 17000 lumens of light output (Max. 150W, real max depends on how much heat the led dissipates as i'll have to limit it so it can't overheat and die)
-- An upcycled camera lens not good enough for photography but perfect for a beam of light
+- An upcycled camera lens no longer good enough for photography but perfect for a beam of light
 - Motorised lens control with manual control if desired and zoom recall
 - Digital constant current LED dimming (so no flickering from PWM)
 - USB-C for computer control of brightness and zoom
