@@ -1,4 +1,4 @@
-## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 + 0.5 + 0.25 + 1.25 + 4 + 0.5 + 1 + 1.5 + 1 + 1 + 0.5 + 2 + 4 + 1.5 + 2 + 2.5 + 4 = 57.5 hours
+## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 + 0.5 + 0.25 + 1.25 + 4 + 0.5 + 1 + 1.5 + 1 + 1 + 0.5 + 2 + 4 + 1.5 + 2 + 2.5 + 4 + 1 = 58.5 hours
 
 # Saturday 17 May 2025 - 19:00 - 3 hours
 
@@ -574,3 +574,24 @@ KNOB!!
 
 
 wow very productive day
+
+
+# Thursday 24 July - 1 hour
+
+I've been getting my project towards ready for submission, and i also added two more screw holes for attaching the back plate.
+
+I gimped a wiring diagram!
+
+<img width="715" height="596" alt="image" src="https://github.com/user-attachments/assets/7d30c748-be72-403a-98ed-833857e947cc" />
+
+I also did a better readme
+
+Here's my ticklist so far!
+
+<img width="1257" height="1034" alt="image" src="https://github.com/user-attachments/assets/6bab0443-28a7-45e6-a3d2-4777382f6227" />
+
+I am going to do the code tomorrow, i have no doubt it won't be perfect but it should be enough to function
+
+I have an excel spreadsheet of my BoM, but i'm too tired right now to add it to my repo as a csv and in my readme as a table so goodnight!
+
+I am debating with myself whether or not this is a 6 or 10 point project, i guess i'll ask in one of the highway channels
