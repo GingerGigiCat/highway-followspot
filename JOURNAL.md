@@ -1,4 +1,4 @@
-## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 + 0.5 + 0.25 + 1.25 + 4 + 0.5 + 1 + 1.5 + 1 + 1 + 0.5 + 2 + 4 + 1.5 + 2 + 2.5 + 4 + 1 + 2 = 60.5 hours
+## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 + 0.5 + 0.25 + 1.25 + 4 + 0.5 + 1 + 1.5 + 1 + 1 + 0.5 + 2 + 4 + 1.5 + 2 + 2.5 + 4 + 1 + 2 + 1 = 61.5 hours
 
 # Saturday 17 May 2025 - 19:00 - 3 hours
 
@@ -604,3 +604,8 @@ I did code, assigning pins to the right ones for the xiao, and i changed the pin
 i also exported everything as step files, finalised the BoM, figured out i'm going to split the cost of filament with a friend so i can get 1kg for £8.75, and made production files.
 
 oh and i added to the readme, asked acon if it's a 6 or 10 point project (they said 6 but maybe with extra points), and did some other things to get it good too.
+
+
+# Tuesday 19 July - 1 hour
+
+I did the code!!! yay!! I can submit now!!
