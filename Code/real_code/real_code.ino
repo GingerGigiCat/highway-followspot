@@ -45,9 +45,6 @@ float wiper_to_angle(float analogue_input) {
   return (analogue_input - wiper_to_angle_offset) / wiper_to_angle_scale ;
 }
 
-void smooth_rotate(int angle) {
-
-}
 
 void setup() {
   digitalWrite(big_led_dimming_pin, HIGH); // driving it high will make the output of the optocoupler be low in theory so the led driver is set to 0%
@@ -126,8 +123,40 @@ void setup() {
 float angle;
 
 void loop() {
+  int ambient_temp = MAX31855.readAmbient();
+  int probe_temp = MAX31855.readProbe();
+  int fault_code = MAX31855.fault();
 
-  // put your main code here, to run repeatedly:
+  // temperature management
+  if (probe_temp >= 105) {
+    digitalWrite(big_led_dimming_pin, HIGH); // If temperature's very too hot, turn off LED to protect it
+    int brightness_multiplier = 0;
+  }
+  else if (probe_temp >= 100) {
+    int brightness_multiplier = 0.2;
+  }
+  else if (probe_temp >= 95) {
+    int brightness_multiplier = 0.45;
+  }
+  else if (probe_temp >= 90) {
+    int brightness_multiplier = 0.7;
+  }
+  else if (probe_temp >= 85) {
+    int brightness_multiplier = 0.9;
+  }
+  else {
+    brightness_multiplier = 1;
+  }
+
+  if (brightness_multiplier != 1) {
+    Serial.print("Thermal throttling, LED is ");
+    Serial.print(probe_temp);
+    Serial.println(" celcius");
+    analogWrite(warning_light_pin, 255 * (1-brightness_multiplier));
+  }
+
+
+  // servo management
   reading = read_analogue_input_avg(1, 10);
   angle = wiper_to_angle(reading);
 
@@ -155,8 +184,7 @@ void loop() {
   }
 
 
-  if (digitalRead(store1_pin) == 0) {
-    Serial.println("AA");
+  if (digitalRead(store1_pin) == 0  && !(digitalRead(store2_pin) == 0) {
     if (digitalRead(set_pin) == 0) {
       store1 = wiper_to_angle(read_analogue_input_avg(2, 50));
     }
@@ -169,8 +197,7 @@ void loop() {
       theservo.detach();
     }
   }
-  if (digitalRead(store2_pin) == 0) {
-    Serial.println("BB");
+  else if (digitalRead(store2_pin) == 0 && !(digitalRead(store2_pin) == 0)) {
     if (digitalRead(set_pin) == 0) {
       store2 = wiper_to_angle(read_analogue_input_avg(2, 50));
     }
@@ -184,9 +211,13 @@ void loop() {
     }
   }
 
-
-  //Serial.print(reading);
-  //Serial.print(" = ");
   Serial.print(angle);
   Serial.println("º");
+
+
+  // fader management
+
+  fader_reading = analogRead(fader_pin); // 0-255 hopefully
+  digitalWrite(big_led_dimming_pin, (fader_reading * brightness_multiplier) / 1) + 255;
+
 }
