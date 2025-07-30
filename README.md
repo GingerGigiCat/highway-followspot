@@ -1,4 +1,6 @@
-# This is my followspot i've designed for [highway](https://highway.hackclub.com/)!
+# HIGHLIGHT!
+
+## Highlight is my followspot i've designed for hack club's [highway](https://highway.hackclub.com/) hardware event
 
 <img width="1252" height="1155" alt="image" src="https://github.com/user-attachments/assets/2e0c2ba4-c5c4-41d8-b474-27583e33a3b6" />
 
@@ -14,7 +16,7 @@ It has:
 - Fully open source everything
 - 3 programmable buttons and a fader
 - Automatic brightness reduction if the LED gets too hot
-- An LED on the control panel to give feedback, like if the LED is too hot or the lens is being pushed too far
+- A light on the control panel to give feedback, like if the main LED is too hot or the lens is being pushed too far
 
 The body is 3D printed in PETG but it could be made out of a better material if you feel like it, and the legs are plywood, and of course the lens is glass.
 
