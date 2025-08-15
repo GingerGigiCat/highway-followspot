@@ -1,4 +1,4 @@
-## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 + 0.5 + 0.25 + 1.25 + 4 + 0.5 + 1 + 1.5 + 1 + 1 + 0.5 + 2 + 4 + 1.5 + 2 + 2.5 + 4 + 1 + 2 + 1 = 61.5 hours
+## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 + 0.5 + 0.25 + 1.25 + 4 + 0.5 + 1 + 1.5 + 1 + 1 + 0.5 + 2 + 4 + 1.5 + 2 + 2.5 + 4 + 1 + 2 + 1 + 2 = 63.5 hours
 
 # Saturday 17 May 2025 - 19:00 - 3 hours
 
@@ -609,3 +609,10 @@ oh and i added to the readme, asked acon if it's a 6 or 10 point project (they s
 # Tuesday 19 July - 1 hour
 
 I did the code!!! yay!! I can submit now!!
+
+
+# Friday 15 August - 2 hours
+
+I've been ordering parts and my digikey thing arrived! I chose a cheaper but similar specs LED which was £21 compared to £34 of the original led. I've added chamfers to all the screw holes on the spotlight so that the countersunk screws i'm getting can actually countersink into the body of the light, and i also added more fan vents! I figured it would be better to have too much vent and then cover up if needed than to have too little.
+
+<img width="942" height="1126" alt="image" src="https://github.com/user-attachments/assets/1b3d24e6-14d4-4943-8f8f-b02c507840c3" />
