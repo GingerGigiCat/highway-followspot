@@ -2,7 +2,7 @@
 
 ## Highlight is my followspot i've designed for hack club's [highway](https://highway.hackclub.com/) hardware event
 
-<img width="1252" height="1155" alt="image" src="https://github.com/user-attachments/assets/2e0c2ba4-c5c4-41d8-b474-27583e33a3b6" />
+<img width="1054" height="1054" alt="image" src="https://github.com/user-attachments/assets/67512def-b5bd-4d44-ad28-c85625dfe085" />
 
 A **followspot** is a type of spotlight used in theatre which is manually controlled and pointed at an actor. They normally have brightness and zoom controls, which mine has!
 
