@@ -1,4 +1,4 @@
-## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 + 0.5 + 0.25 + 1.25 + 4 + 0.5 + 1 + 1.5 + 1 + 1 + 0.5 + 2 + 4 + 1.5 + 2 + 2.5 + 4 + 1 + 2 + 1 + 2 = 63.5 hours
+## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 + 0.5 + 0.25 + 1.25 + 4 + 0.5 + 1 + 1.5 + 1 + 1 + 0.5 + 2 + 4 + 1.5 + 2 + 2.5 + 4 + 1 + 2 + 1 + 1.5 = 63 hours
 
 # Saturday 17 May 2025 - 19:00 - 3 hours
 
@@ -611,8 +611,24 @@ oh and i added to the readme, asked acon if it's a 6 or 10 point project (they s
 I did the code!!! yay!! I can submit now!!
 
 
-# Friday 15 August - 2 hours
+# Friday 15 August - 1.5 hours
 
 I've been ordering parts and my digikey thing arrived! I chose a cheaper but similar specs LED which was £21 compared to £34 of the original led. I've added chamfers to all the screw holes on the spotlight so that the countersunk screws i'm getting can actually countersink into the body of the light, and i also added more fan vents! I figured it would be better to have too much vent and then cover up if needed than to have too little.
 
 <img width="942" height="1126" alt="image" src="https://github.com/user-attachments/assets/1b3d24e6-14d4-4943-8f8f-b02c507840c3" />
+
+
+# Thursday 21 August - 2 hours
+
+My parts have arrived! I haven't got my 3d printed bits from my friend yet, and i also haven't got the screws or thermal adhesive yet, but i've got enough to do most of the soldering! 
+Problems:
+- The holes for the AC bits (led driver input and power input) are a smidge too small
+- The footprint for the 5v to 12v dc converter is the wrong way around, but thankfully there is just about enough space on the board that it can still go on!
+
+Soldering the surface mount components (thermocouple amplifier and a capacitor) went surprisingly smoothly!
+
+The 5v to 12v converter works good! 
+
+I flashed the code to the xiao, i did have to change some things because the compiler wasn't happy. But the thermocouple wasn't doing anything. So i dug around for ages and decided in the end to switch to the adafruit max31855 library which also didn't work at first, and i was seriously starting to worry i'd managed to kill it, i even started adding extra solder to the pins. Then i looked at the code (i was trying the adafruit demo) and realised i hadn't changed the default pins. And then it worked perfect!! I still have to change the real code to use the adafruit library though.
+
+The dimensions of the heatsink are a little different to the 3d model, it's like the fins are shifted down by one fin. so i'm changing that and fixing the mounting for it.
