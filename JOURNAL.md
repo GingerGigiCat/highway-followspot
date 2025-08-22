@@ -1,4 +1,4 @@
-## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 + 0.5 + 0.25 + 1.25 + 4 + 0.5 + 1 + 1.5 + 1 + 1 + 0.5 + 2 + 4 + 1.5 + 2 + 2.5 + 4 + 1 + 2 + 1 + 1.5 = 63 hours
+## Time so far: 3 + 1 + 2.5 + 1.5 + 1 + 3 + 1 + 4 + 2 + 1 + 1.5 + 3 + 3.5 + 0.5 + 0.25 + 1.25 + 4 + 0.5 + 1 + 1.5 + 1 + 1 + 0.5 + 2 + 4 + 1.5 + 2 + 2.5 + 4 + 1 + 2 + 1 + 1.5 + 2 = 65 hours
 
 # Saturday 17 May 2025 - 19:00 - 3 hours
 
@@ -632,3 +632,8 @@ The 5v to 12v converter works good!
 I flashed the code to the xiao, i did have to change some things because the compiler wasn't happy. But the thermocouple wasn't doing anything. So i dug around for ages and decided in the end to switch to the adafruit max31855 library which also didn't work at first, and i was seriously starting to worry i'd managed to kill it, i even started adding extra solder to the pins. Then i looked at the code (i was trying the adafruit demo) and realised i hadn't changed the default pins. And then it worked perfect!! I still have to change the real code to use the adafruit library though.
 
 The dimensions of the heatsink are a little different to the 3d model, it's like the fins are shifted down by one fin. so i'm changing that and fixing the mounting for it.
+
+
+# Friday 22 August - 1 hour
+
+I edited the dimensions of heatsink mounting stuff in the model, i won't show a picture because there's visually not much difference but i promise it has been changed. I want to make a grating across the big hole for the heatsink but i'm going to bed so bye
