@@ -637,3 +637,23 @@ The dimensions of the heatsink are a little different to the 3d model, it's like
 # Friday 22 August - 1 hour
 
 I edited the dimensions of heatsink mounting stuff in the model, i won't show a picture because there's visually not much difference but i promise it has been changed. I want to make a grating across the big hole for the heatsink but i'm going to bed so bye
+
+
+# Sunday 28 September - 3 hours
+
+Over the past month, I have:
+
+broken the servo (chipped a gear tooth) and ordered new ones. The new ones are a bit stiffer to turn and have a physical limit on how far the spinny bit can spin, and they're a little taller
+
+improved the servo mount!
+
+<img width="491" height="609" alt="image" src="https://github.com/user-attachments/assets/06f416e6-da81-435d-b2d4-c3399eee5f05" />
+
+soldered the pcb!
+
+![PXL_20250928_154606048 MP](https://github.com/user-attachments/assets/7cda8199-a0f3-477d-9abd-befe8a9dd80f)
+
+added a screw hole to the front handle 
+<img width="695" height="1084" alt="image" src="https://github.com/user-attachments/assets/73168429-9109-4da6-b61f-2a875f4b9324" />
+
+and otherwise finished and prepared the 3d model to be printed by my friend
