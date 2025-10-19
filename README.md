@@ -48,6 +48,8 @@ I have a passion for the technical parts of theatre, so making this was rather a
 
 <img width="908" height="1090" alt="image" src="https://github.com/user-attachments/assets/74bd0cb7-8099-4499-b20b-4e23db17041d" />
 
+<img width="864" height="656" alt="overview_image_267752774_635424" src="https://github.com/user-attachments/assets/222d9853-df03-4017-87e9-0ea1ac159609" />
+
 
 # Bill of Materials
 
